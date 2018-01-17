@@ -1,0 +1,22 @@
+div.support{margin-top:30px;background-image:url(../img/bot.png);background-repeat:no-repeat;background-size:cover;background-position:center;height:270px;text-align:center;color:#FFF;}
+div.support p.support1{padding-top:5%;font-size:340%;font-family:RobotoCondensed-Bold;}
+div.support p.support2{font-size:150%;font-family:RobotoCondensed-Regular;}
+div.support ul{display:inline-block;margin-top:22px;}
+div.support ul li{margin-right:35px;}
+div.support ul li:last-child{margin-right:0px;}
+div.support ul li a:hover{background:none;}
+div.support ul li a{color:#747474;text-decoration:none;}
+div.support ul li a.displayblock{margin-top:-11px;}
+div.lakita{margin-top:100px;padding-top:90px;background-image:url(../img/bg_footer.png);background-repeat:no-repeat;}
+div.lakita div.receiveLetter{margin-top:50px;}
+div.lakita div.receiveLetter p{font-weight:bold;font-size:150%;margin-top:2%;font-family:RobotoCondensed-Regular;padding-left:15px;}
+div.lakita div.lakita1{display:flex;align-items:center;}
+div.lakita div.contactus .row{margin-bottom:20px;display:flex;align-items:center;}
+div.footer{background-image:url(../img/footer2.png);background-repeat:no-repeat;background-size:cover;background-position:left top;height:285px;position:relative;}
+div.footer div.row{position:absolute;bottom:5px;}
+div.footer ul{list-style-type:none;}
+div.footer ul li{float:left;margin-left:15px;}
+.popup-wrapper{position:fixed;bottom:0;right:0;top:0;left:0;overflow:hidden;z-index:8010;background:url('../img/modal_overlay.png');}
+.popup-wrapper .popup-loading{background-color:white;opacity:0.7;filter:alpha(opacity=70);height:100%;width:100%;z-index:21;position:absolute;top:0px;left:0px;}
+.popup-wrapper .popup-loading .loading-container{position:relative;height:100%;background:url(../img/32.gif) center center no-repeat;}
+.popup-wrapper .popup-loading .loading-container span{position:absolute;top:58%;left:30%;opacity:1;z-index:1000000000000;font-size:28px;font-weight:bold;}

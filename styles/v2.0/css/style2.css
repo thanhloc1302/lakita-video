@@ -1,0 +1,411 @@
+@CHARSET "UTF-8";
+@font-face{
+    font-family: OpenSans-Semibold;
+    src: url('../fonts/OpenSans-Semibold.ttf');
+}
+@font-face{
+    font-family: helveticaneue;
+    src: url('../fonts/HelveticaNeue.otf');
+}
+@font-face{
+    font-family: OpenSans-Bold;
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+    font-family: OpenSans-ExtraBold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+@font-face{
+    font-family: RobotoCondensed-Bold;
+    src: url('../fonts/RobotoCondensed-Bold.ttf');
+}
+@font-face{
+    font-family: RobotoCondensed-Regular;
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face{
+    font-family: RobotoCondensed-Light;
+    src: url('../fonts/RobotoCondensed-Light.ttf');
+}
+@font-face{
+    font-family: UVNVan;
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+    font-family: OpenSans-BoldItalic;
+    src: url('../fonts/OpenSans-BoldItalic.ttf');
+}
+*{
+    margin: 0px;
+    padding: 0px
+}
+.container-fluid{
+    margin: 0px;
+    padding: 0px
+}
+.header{background: url(../img/top1.png) no-repeat;
+    min-height: 850px;
+    padding-top: 100px;
+    color: #FFF;
+    text-align: center;
+}
+#logo{
+    padding: 0px 20%;
+}
+.header div p {
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 70px;
+}
+#intro{
+    font-size: 400%;
+    font-family: helveticaneue;
+
+}
+.header div p span{
+    font-size: 88%;;
+    font-weight: bold;
+}
+#intro1{
+    font-size: 32px;
+    font-family: OpenSans-Semibold;
+    font-weight: bold;
+}
+#search{
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    height: 50px;
+    position: absolute;
+    color: white;
+}
+.bt_menu{
+    padding: 7px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #666666;
+    font-family: RobotoCondensed-Regular;
+}
+.active{
+    padding: 7px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c944a;
+    color: #FFF;
+    font-family: RobotoCondensed-Bold;
+
+}
+#bt_dangnhap{
+    margin-left: 20%;
+    margin-top: 55%;
+    font-weight: bold;
+    font-family: OpenSans-Bold;
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2c944a;
+    font-size: 150%;
+}
+#slider_top{
+    margin-top: 4%;
+}
+#bt_slider1{
+    text-align:center
+}
+.dot1 {
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #2b5237;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot1:hover{
+    background-color: #2c944a;
+}
+#menu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 20px;
+    margin-left: -1%;
+}
+#menu ul li{
+    display:inline;
+    font-size: 12px;
+    padding:0px 6px;
+    font-family: RobotoCondensed-Regular;
+}
+#menu ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #666666;
+    font-size: 120%;
+}
+#khoahoc{
+    text-align: center;
+}
+#khoahoc{
+    margin-top: 30px;
+}
+#intro2{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: OpenSans-ExtraBold;
+}
+#intro3{
+    color: #747474;
+    font-size: 20px;
+}
+#ds_menu{
+    margin-top: 40px;
+}
+#kh{
+    margin-top: 60px;
+}
+.ten_khoahoc{
+    text-align: center;
+    margin: 25px 10% 0px;
+    font-size: 17px;
+    font-family: RobotoCondensed-Regular;
+    font-size: 150%;
+}
+.ten_giangvien{
+    text-align: center;
+    color: #888888;
+    font-family: RobotoCondensed-Regular;
+    font-size: 150%;
+}
+.gia{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-family: RobotoCondensed-Regular;
+    font-size: 150%;
+}
+
+.dot2 {
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bee1c8;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot2:hover{
+    background-color: #2c944a;
+}
+#bt_slider2{
+    margin-left: 40%;
+}
+
+#see_all{
+    margin: 40px 38% 70px;
+    padding: 7px 100px;
+    background: none;
+    font-size: 150%;
+    font-weight: bold;
+}
+#hv_comment{
+    background: url(../img/bg_cnhv.png) no-repeat;
+    min-height: 600px;
+    color: #FFF;
+    text-align:  center;  
+}
+#nhanxet{
+    font-size: 188%;
+    padding-top: 10%;
+}
+#dieunguyen{
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;
+}
+#dieunguyen p{
+    font-family: RobotoCondensed-Bold;
+    margin-top: 10px;
+    font-size: 200%;
+}
+#horizon{
+    background-color: #2c944a;
+    width: 100%;
+    height: 10px;
+}
+#slider_cnhv{
+    text-align: center;
+    margin-top: 5%;
+}
+#slider_cnhv div div div img{
+    margin: 0 auto;
+}
+.ten_hv{
+    font-family: RobotoCondensed-Bold;
+    font-size: 140%;
+}
+.nghe_hv{
+    color: #9b9b9b;
+    font-family: RobotoCondensed-Regular;
+    font-size: 110%;
+    padding: 0 10px;
+}
+.nx_hv{
+    color: #666666;
+    padding: 0 5%;
+    font-family: RobotoCondensed-Light;
+    font-size: 150%;
+}
+.dot3{
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot3:hover{
+    background-color: #888888;
+}
+#aboutus{
+    margin-top: 7%;
+}
+#intro4 p{
+    font-size: 200%;
+    font-family: OpenSans-ExtraBold;
+}
+#intro4 span{
+    font-size: 125%;
+    color: #666666;
+}
+#logo_hand{
+    height: 650px;
+    position: relative;
+}
+.loiich_kh{
+    font-weight: bold;
+    font-family: OpenSans-Semibold;
+    font-size: 150%;
+    margin-top: 12%;
+}
+.mota_loiich{
+    color: #989898;
+    font-family: RobotoCondensed-Light;
+    font-size: 110%;
+}
+.icon_loiich{
+    margin-top: 100%;
+}
+#support{
+    background-image: url(../img/bot.png);
+    background-repeat: no-repeat;
+    height: 270px;
+    text-align: center;
+    color: #FFF;
+}
+#support p{
+    padding-top: 5%;
+    font-size: 340%;
+    font-family: RobotoCondensed-Bold;
+}
+#support span{
+    font-size: 150%;
+    font-family: RobotoCondensed-Regular;
+}
+#contact{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+
+}
+#contact ul{
+    margin-top: -75px;
+}
+#contact ul li{
+    display: inline;
+    padding: 0 2%;
+}
+.icon_footer{
+    width: 150px;
+    height: 100px;
+    position: absolute
+}
+.icon_footer p{
+    color: #747474;
+}
+.icon_clicked{
+    color: #2c944a;
+    font-weight: bold;
+}
+#lakita{
+    background-image: url(../img/bg_footer.png);
+    background-repeat: no-repeat;
+}
+.icon_lakita{
+    padding: 0% 0% 35% 0%;
+}
+.text_lakita{
+    padding-top: 10%;
+    font-weight: bold;
+}
+.infor_lakita{
+    padding-top: 4%;
+}
+.nhanthu{
+    font-weight: bold;
+    font-size: 150%;
+    margin-top: 2%;
+    font-family: RobotoCondensed-Regular;
+}
+.input_email{
+    width:106%
+}
+.bt_email{
+    width: 25%;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #2c944a;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+}
+#footer{
+    background-image: url(../img/footer2.png);
+    height: 285px;     
+}
+#footer div div div ul{
+    list-style-type: none;
+    margin-top: 60%;
+}
+#footer div div div ul li{
+    display:inline;
+    padding: 0px 2%;
+    cursor: pointer
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

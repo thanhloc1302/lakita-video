@@ -1,0 +1,672 @@
+
+@font-face{
+    font-family: UTM Helve;
+    src:    url('../fonts/UTM-Helve.ttf') format('truetype'),
+            url('../fonts/UTM-HelveBold.ttf') format('truetype')
+}
+b{
+    font-family: UTM Helve;
+}
+p{
+    font-family: UTM Helve;
+}
+span{
+    font-family: UTM Helve;
+}
+.chutrang:hover{
+    color: #FFF
+}
+
+#main_to_nhat_bao_toan_bo_luon{
+    position: relative;
+}
+
+#menu_top{
+    position: absolute;
+    width: 100%;
+    z-index: 6
+}
+
+.chutrang{
+    color: #FFF;
+}
+
+.padding0{
+    padding: 0px;
+}
+
+.khongvien{
+    border: none;
+}
+
+
+
+
+#form_dang_ky{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    margin-top: 500px;
+    
+}
+
+
+
+@media (max-width:990px){
+    .dangkygv{
+        padding: 20px 20px 0 20px;
+        font-size: 20px
+    }  
+}
+
+@media (min-width:991px){
+    .dangkygv{
+        padding: 20px 20px 0 20px;
+        font-size: 30px
+    } 
+}
+
+@media (min-width:992px) and (max-width:1113px){
+    .candong1{
+        display: none
+    }
+}
+
+@media (min-width:992px) and (max-width:1030px){
+    .candong2{
+        display: none;
+    }
+}
+
+@media (min-width:1157px){
+    .candong1{
+        display: none
+    }
+    .candong2{
+        display: none;
+    }
+}
+
+@media (max-width:991px){
+    .candong1{
+        display: none
+    }
+    .candong2{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+#page_hien_thi{
+    margin-top: -18px;
+}
+
+#header{
+    width: 100%;
+    
+    height: 644px;
+    background-image:url(../img/teacher/header.png); 
+/*    background-size: cover;*/
+    
+}
+
+.fontlonhon1500{
+    
+}
+
+.font20{
+    font-size: 18px;
+}
+
+.font20a{
+    font-size: 20px;
+}
+@media (min-width:1500px) and (max-width:2000px){
+    #header{
+    width: 100%;
+    height: auto;
+    background-image:url(../img/teacher/header.png); 
+    background-size: cover;
+    height: 800px;
+    }
+    #hoptac{
+        font-size: 30px;
+        font-family: UTM Helve;
+    }
+    #gioithieulakita{
+        font-size: 20px
+    }
+    .fontlonhon1500{
+        font-size: 23px
+    }
+    .font20{
+        font-size: 20px
+    }
+}
+
+@media (min-width:2001px){
+    #header{
+    width: 100%;
+    height: auto;
+    background-image:url(../img/teacher/header.png); 
+    background-size: cover;
+    height: 850px;
+    }
+    #hoptac{
+        font-size: 35px;
+        font-family: UTM Helve;
+    }
+    #gioithieulakita{
+        font-size: 25px
+    }
+    .fontlonhon1500{
+        font-size: 28px
+    }
+    .font20{
+        font-size: 29px
+    }
+}
+
+
+.intro1{
+    text-align: center;
+    color: #FFF;
+    margin-top: 10em;
+}
+.intro1 b{
+    font-size: 2em;
+}
+
+@media (max-width:500px){
+    .intro1 b{
+    font-size: 20px;
+    }
+}
+
+.intro1 p{
+    padding: 2em 3.5em;
+}
+
+@media (max-width:400px){
+    .intro1 p{
+    padding: 2em 1em;
+    }
+}
+
+.btdangky{
+    background-color: #2c944a;
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #FFF;
+}
+
+#trothanhgv{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#trothanhgv b{
+    font-size: 30px;
+}
+
+.xam{
+    color: #6d6d6d;
+}
+.margin3em{
+    margin: 0 3em;
+}
+.margintop30px{
+    margin-top: 30px;
+}
+
+.textmargintop10px{
+    display: block;
+    margin-top: 20px;
+}
+
+@media (max-width:991px){
+.margintop40px1{
+    margin-top: 40px;
+}
+}
+@media (min-width:1285px) and (max-width:1586px){
+.margintop40px1{
+    margin-top: 40px;
+}
+}
+
+
+@media (min-width:992px) and (max-width:1284px){
+    .textmargintop40px1{
+        margin-top: 0px;
+        
+    }
+}
+
+@media (min-width:1153px) and (max-width:1429px){
+    .margintop40px{
+        margin-top: 40px;
+        
+    }
+}
+
+
+#nhanxetdanhgia{
+    background-color: #1c1f25;
+    color: #FFF;
+    width: 100%;
+    height: 650px;
+}
+
+@media (min-width:720px) and (max-width:991px){
+    #nhanxetdanhgia{
+    background-color: #1c1f25;
+    color: #FFF;
+    width: 100%;
+    height: 950px;
+}
+}
+
+@media (min-width:480px) and (max-width:719px){
+    #nhanxetdanhgia{
+    background-color: #1c1f25;
+    color: #FFF;
+    width: 100%;
+    height: 1000px;
+}
+}
+
+@media (min-width:370px) and (max-width:479px){
+    #nhanxetdanhgia{
+    background-color: #1c1f25;
+    color: #FFF;
+    width: 100%;
+    height: 1100px;
+}
+}
+
+@media (min-width:200px) and (max-width:369px){
+    #nhanxetdanhgia{
+    background-color: #1c1f25;
+    color: #FFF;
+    width: 100%;
+    height: 1200px;
+}
+}
+
+
+
+.tapavagv{
+    background-color: #1c1f25;
+    border: none;
+}
+
+.margintop-10px{
+    margin-top: -8px;
+}
+
+.marginbot50{
+    margin-bottom: 50px;
+}
+
+.anhcangiua{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:484px){
+    .batapavagv{
+        width: 100%;
+    }
+    .batapavagv li{
+        width: 33.333333%;
+    }
+    .batapavagv li a img{
+        width: 81%
+    }
+}
+
+@media (min-width:482px) and (max-width:499px ){
+    .batapavagv{
+        margin-left:1em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:500px ) and (max-width:550px ){
+    .batapavagv{
+        margin-left:2em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:551px ) and (max-width:600px ){
+    .batapavagv{
+        margin-left:3.5em;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:601px ) and (max-width:650px){
+    .batapavagv{
+        margin-left:5em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:651px ) and (max-width:700px ){
+    .batapavagv{
+        margin-left:7em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:701px ) and (max-width:750px ){
+    .batapavagv{
+        margin-left:9em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:751px ) and (max-width:800px ){
+    .batapavagv{
+        margin-left:11em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:801px ) and (max-width:850px ){
+    .batapavagv{
+        margin-left:13em ;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:851px ) and (max-width:900px ){
+    .batapavagv{
+        margin-left:15em ;
+        margin-top: 25px;
+    }
+}
+    
+@media (min-width:901px ) and (max-width:950px ){
+    .batapavagv{
+        margin-left:17em ;
+        margin-top: 25px;
+    }
+}
+    
+@media (min-width:951px ) and (max-width:991px ){
+    .batapavagv{
+        margin-left:19em ;
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:990px){
+    .textcangiua{
+        text-align: center
+    }
+}
+
+
+#quytrinhtaokhoahoc{
+    background-color: #f3f1f1;
+}
+.paddingbot40{
+    padding-bottom: 40px
+}
+
+.can2ben30px{
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+.textgiua{
+    text-align: center;
+    display: block;
+}
+
+.margintop10px{
+    margin-top: 10px
+}
+
+@media (min-width:992px) and (max-width:1151px){
+    .iconmuiten{
+        margin-left: 4.5em;
+        margin-top: -2.3em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 31px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:1150px) and (max-width:1300px){
+    .iconmuiten{
+        margin-left: 5em;
+        margin-top: -2.3em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 31px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:1301px) and (max-width:1500px){
+    .iconmuiten{
+        margin-left: 6em;
+        margin-top: -2.3em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 31px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:1501px) and (max-width:1700px){
+    .iconmuiten{
+        margin-left: 7em;
+        margin-top: -2.3em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 31px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:1701px) and (max-width:2000px){
+    .iconmuiten{
+        margin-left: 7em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 35px;
+        z-index: 2;
+    }
+}
+
+@media (min-width:2001px){
+    .iconmuiten{
+        margin-left: 9em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        display: block;
+        color: #FFF;
+        font-size: 36px;
+        z-index: 2;
+    }
+}
+
+.can2ben15px{
+    margin-left: 15px;
+    margin-right: 15px
+}
+
+@media (min-width:2001px){
+    .can2ben15px{
+        margin-left: 30px;
+        margin-right: 30px
+    }
+}
+
+.nenxam{
+     background-color: #f3f1f1;
+}
+
+@media (min-width:1453px){
+    .quytrinh{
+        font-size: 35px;
+    }
+}
+
+@media (min-width:1090px) and (max-width:1452px) {
+    .quytrinh{
+        font-size: 25px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1089px) {
+    .quytrinh{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:991px) {
+    .quytrinh{
+        font-size: 35px;
+    }
+}
+
+#tatcatinhnang{
+    background-color: #1e7546;
+}
+
+.margintop-8px{
+    margin-top: -10px;
+}
+
+
+
+@media (min-width:770px) and (max-width:1140px){
+    #anhtinhnang{
+        margin-top: 3em;
+    }
+}
+
+#footer{
+    background-image:url(../img/teacher/footer.png);
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+@media (min-width:1500px) and (max-width:2000px){
+    #footer{
+        background-image:url(../img/teacher/footer.png);
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width:2001px){
+    #footer{
+        background-image:url(../img/teacher/footer.png);
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        text-align: center;
+    }
+}
+
+.font40{
+    font-size: 40px
+}
+
+.paddingtop40{
+    padding-top: 40px;
+    display: block;
+}
+
+@media (min-width:485px){
+    .filter{
+        margin-top: -8.7em
+    }
+}
+@media (min-width:469px) and (max-width:484px){
+    .filter{
+        margin-top: -7.1em
+    }
+}
+
+#tap1{
+    display: none
+}
+
+
+@media (max-width:469px){
+.vitrirelative{
+    position: relative;
+}
+.vitriabsolute{
+    position: absolute;
+}
+}
+
+@media (max-width:991px){
+    .cantop10px{
+        margin-top: 10px
+    }
+}
+
+@media (min-width:1600px) and (max-width:2000px){
+    .anhtn{
+        width: 815px;
+    }
+}
+@media (min-width:2001px){
+    .anhtn{
+        width: 100%
+    }
+}
+
+
+@media (min-width:1200px){
+    .avatogv{
+        width: 340px
+    }
+}
+
+@media (min-width:1009px) and (max-width:1112px){
+    .margintop40px2{
+        margin-top: 40px
+    }
+}
+@media (min-width:992px) and (max-width:1112px){
+    .margintop40px3{
+        margin-top: 40px
+    }
+}
+
+
+

@@ -1,0 +1,315 @@
+@media screen and (min-width:768px) {
+    div.Testimonials .carousel-indicators {
+        bottom: -47px;
+    }
+    .modal-dialog {
+        margin: 90px auto;
+    }
+}
+
+@media (min-width:1600px) {
+    .header .text-header p.course2 {
+        margin-bottom: 79px;
+    }
+    .header .text-header .loginBtn {
+        margin-left: 37.5%;
+        margin-top: 103px;
+    }
+    .header .text-header .loginBtn button {
+        font-weight: bold;
+        font-family: OpenSans-Bold;
+        height: 65px;
+        border-radius: 6px;
+        font-size: 150%;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    .listCourse .courseName {}
+    .listCourse .teacher {}
+    .listCourse .price {}
+}
+
+@media (min-width:1000px) and (max-width:1599px) {
+    .header .text-header .loginBtn {
+        margin-left: 37.5%;
+        margin-top: 50px;
+    }
+    .header .text-header .loginBtn button {
+        font-weight: bold;
+        font-family: OpenSans-Bold;
+        height: 55px;
+        border-radius: 6px;
+        font-size: 150%;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    .one_course img.img-responsive {
+        width: 360px;
+        height: 260px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:1200px) {
+    .hidden-1000 {
+        display: none !important;
+    }
+    .header .text-header .loginBtn {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .header .text-header {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1000px) {
+    .header .text-header .col-xs-offset-4 {
+        margin-left: 37.333333%;
+    }
+    .header .text-header div.h1 {
+        font-size: 5vw;
+    }
+    .header .text-header div.h1 strong {
+        font-size: 5.5vw;
+    }
+    .my-row-1 h1 {
+        font-size: 30px;
+    }
+    .my-row-1 p {
+        font-size: 23px;
+    }
+    .listCourse .courseName {
+        font-size: 2vw;
+    }
+    div.lakita {
+        margin-top: 0px;
+    }
+}
+
+@media(min-width:769px) {
+    .hidden-769 {
+        display: none;
+    }
+}
+/*
+@media (min-width:768px) {
+    .navbar-toggle {
+        display: block;
+    }
+    .navbarsm .navbar-header {
+        width: 100%;
+    }
+    .navbar-nav>li {
+        float: none !important;
+    }
+    .navbar-nav {
+        width: 100% !important;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+    .navbar-nav>li>.dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}*/
+
+@media (max-width:768px) {
+    .col-sm-xs {
+        margin-left: 29%;
+    }
+/*    .nav-tabs>li>a {
+        border-radius: 0;
+    }
+    div.navBar .navBarCenter #bs-example-navbar-collapse-1 {
+        text-align: right;
+    }
+    div.navBar .navBarCenter #bs-example-navbar-collapse-1 ul li a {
+        background-color: #1E7346;
+        color: #fff;
+        height: 50px;
+        line-height: 30px;
+    }*/
+    .listCourse .courseName,
+    .listCourse .teacher,
+    .listCourse .price {
+        font-size: 18px;
+    }
+    .TestimonialHighlight .content {
+        padding: 10px 10px 10px 20px;
+    }
+    .TestimonialHighlight .content .content2 {
+        font-size: 3vw;
+    }
+    .TestimonialHighlight .content p.name,
+    .TestimonialHighlight .content p.org {
+        font-size: 3vw;
+    }
+    .TestimonialHighlight>img {
+        height: 480px;
+    }
+    div.Testimonials p.content {
+        height: auto;
+    }
+    .margintop10 {
+        margin-top: 20px;
+    }
+    .Testimonials .container {
+        position: relative;
+    }
+    .left-carousel-control {
+        position: absolute;
+        top: 200px;
+        left: 0px;
+    }
+    .right-carousel-control {
+        position: absolute;
+        top: 200px;
+        right: 28px;
+        ;
+    }
+    div.lakita {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    div.support {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    div.footer {
+        background-position: -53px 0px;
+        height: 225px;
+    }
+    #myModal3 .nav-tabs>li {
+        float: left;
+    }
+    .my-form-group-1 .my-form-control-1 input {
+        width: 85%;
+    }
+    div.Testimonials .img {
+        max-height: 244px;
+    }
+}
+
+@media (max-width:500px) {
+    .listCourse .courseName,
+    .listCourse .teacher,
+    .listCourse .price {
+        font-size: 20px;
+    }
+    .listCourse .courseName,
+    .listCourse .teacher,
+    .listCourse .price,
+    .TestimonialHighlight .content .content2 {
+        font-size: 18px;
+    }
+    .TestimonialHighlight .content p.name,
+    .TestimonialHighlight .content p.org {
+        font-size: 18px;
+    }
+    .TestimonialHighlight>img {
+        height: 480px;
+    }
+    .margintop10 {
+        margin-top: 10px;
+    }
+    #show_modal {
+        font-size: 14px;
+    }
+    /*.one_course{height:400px;}*/
+    .my-row-1 h1 {
+        font-size: 22px;
+    }
+    .listCourse .courseName {
+        margin: 20px 3% 0px;
+    }
+    div.Testimonials .testimonial {
+        font-size: 27px;
+    }
+    div.Testimonials p.testimonial2 {
+        font-size: 15px;
+    }
+    .top-course {
+        font-size: 24px;
+        padding: 0px 10px;
+    }
+    .my-row-1 p:last-child {
+        font-size: 18px;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width:350px) {
+    .listCourse .courseName,
+    .listCourse .teacher,
+    .listCourse .price,
+    .TestimonialHighlight .content .content2 {
+        font-size: 5vw;
+    }
+    .TestimonialHighlight .content p.name,
+    .TestimonialHighlight .content p.org {
+        font-size: 4vw;
+    }
+    .listCourse {
+        margin-top: 34px;
+    }
+/*    div.navBar .navbar .navbar-header>a {
+        margin-left: 50px;
+    }*/
+    .TestimonialHighlight>img {
+        height: 380px;
+    }
+    .margintop10 {
+        margin-top: 10px;
+    }
+    .my-container-1 > h4 {
+        line-height: 22px;
+    }
+    .my-form-group-1 .my-form-control-1 input {
+        width: 84%;
+    }
+    .my-form-group-1 .my-form-control-1 {
+        float: none;
+        margin-left: 0px;
+    }
+    .my-form-group-1 .my-form-control-1:first-child {
+        width: 100%;
+        text-align: left;
+    }
+    .my-form-group-1 .my-form-control-1:nth-child(2) {
+        width: 90%;
+    }
+    .my-form-group-1 .remember {
+        float: left;
+        width: 11% !important;
+    }
+    .my-btn {
+        padding: 10px 16px;
+    }
+    #myModal3 .my-container-1 > p {
+        margin-bottom: 0px;
+    }
+    /*.one_course{height:350px;}*/
+    div.Testimonials .img {
+        max-width: 332px;
+        max-height: 244px;
+    }
+    .listCourse .courseName {
+        margin-bottom: 8px;
+    }
+}

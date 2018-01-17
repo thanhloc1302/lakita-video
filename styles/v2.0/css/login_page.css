@@ -1,0 +1,84 @@
+.header{
+    background-color: #2c944a;
+}
+.header div div a{
+    color: #FFF
+}
+
+@media screen and (max-width:991px){
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+}
+
+.logo{
+    margin-top: 20px;
+    width: 250px;
+}
+@media screen and (max-width:991px){
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+}
+.form-login{
+    margin-top: 15px;
+    color: #FFF
+}
+.btn-login{
+    margin-top: 25px
+}
+.body{
+    background-color: #e9ebee;
+    padding-top: 20px;
+    padding-bottom: 50px;
+        margin-bottom: -30px;
+}
+.padding0{
+    padding:0px;
+}
+.my-btn{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #2c944a;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    width: 40%;
+    display: inline
+}
+.bgfb{
+    background: #496397;
+}
+.bggg{
+    background: #dc493f;
+}
+.social-login a{
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.social-login > a:hover{
+    color:#fff;
+}
+.remember{
+    display: inline-flex;
+    color: #FFF;
+}
+#is_remember{
+    margin-right: 5px;
+}

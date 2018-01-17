@@ -1,0 +1,101 @@
+.course_detail_mobile * {
+    font-family: RobotoCondensed-Regular;
+}
+.course_detail_mobile .course_title{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.course_detail_mobile .course_price{
+    font-size: 17px;
+}
+.nav-tabs>li>a {
+    color:#000;
+}
+.voucher_mobile > p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+.voucher_mobile .voucher-input input{
+    padding: 3px 0px 3px 5px;
+}
+.voucher_mobile .voucher-input .btn{
+    background-image:none;
+    padding: 5px 12px;
+}
+.course_purchase .btn{
+    background-image:none;
+    margin-top: 15px;
+}
+i{
+    font: normal normal normal 14px/1 FontAwesome !important;
+}
+.course-detail{
+    margin: 10px 0px;
+}
+.course_detail_1{
+    font-size: 20px;
+    font-family: RobotoCondensed-Regular;
+    text-align: center;
+    font-weight: bold;
+    background-color: #2C934A;
+    color: #fff;
+    padding: 5px 0px;
+    width: 115%;
+    margin-left: -5%;
+}
+ul.course-outline {
+    list-style-type: none;
+
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.course_outline_mobile{
+    font-family: RobotoCondensed-Regular; 
+    position:relative; 
+    background-color: #FAEDDC; 
+    height: 500px;
+    overflow: hidden;
+}
+.show_more{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #FAECDF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 63px;
+    box-shadow: 5px 5px 5px #FAECDF;
+}
+.course_detail_2{
+    font-family: RobotoCondensed-Regular;
+    margin-top: 40px;
+    font-size: 16px;
+}
+#teacher p{
+    text-align: justify;
+}
+@media (min-width: 768px){
+    .course_outline_mobile{
+    font-family: RobotoCondensed-Regular;
+    background-color: #fff;
+    position:relative; 
+    height: 900px;
+    overflow: hidden;
+}
+.course_detail_2 ul.nav-tabs{
+        width: 108% !important;
+}
+.course_detail_1 {
+    margin-top: 0px; 
+     text-align: left; 
+     background-color: #fff;
+     color: #000;
+         font-size: 18px;
+             padding-left: 14px;
+}
+}

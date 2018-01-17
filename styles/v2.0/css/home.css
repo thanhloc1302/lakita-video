@@ -1,0 +1,83 @@
+#support{margin-top:5000px;}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+.container-fluid{padding:0px;}
+#carousel-example-generic{margin:0px auto;position:relative;}
+.header #carousel-example-generic div.item .img-responsive{width:100%;}
+.carousel-indicators li{width:20px;height:20px;border:1px solid #335a41;background-color:#335a41;}
+.carousel-indicators .active{width:20px;height:20px;background-color:#2c944a;}
+.header .text-header{margin-top:1%;width:100%;height:100%;position:absolute;top:0px;left:0px;color:white;text-align:center;}
+.header .text-header img{display:block;margin:0px auto;}
+.header .text-header div.h1{font-size:3.5vw;letter-spacing:2px;}
+.header .text-header div.h1 strong{font-size:4vw;}
+.header .text-header .throught{margin-top:20px;border-bottom:2px solid #fff;}
+.header .text-header p.course{margin-top:20px;font-size:2.5vw;margin-bottom:0px;}
+.header .text-header p.course{font-family:OpenSans-Semibold !important;}
+.header .text-header p.course2{font-family:OpenSans-Regular;padding-top:10px;margin-bottom:25px;font-size:18px;}
+.header .text-header input#key_word{height:50px;background-color:rgba(255,255,255,0.3);color:#fff;}
+.header .text-header .form-control{padding:11px 10px 12px 12px;}
+.header .text-header .searchBox{position:relative;margin-left:21%;}
+.header .text-header .searchIcon{position:absolute;top:6px;right:30px;cursor:pointer}
+.header .text-header .loginBtn{font-size:1.5vw;margin-top:20px;font-family:OpenSans-Bold;}
+#show_modal{background-color:#2c944a;font-size:24px;background-image:none;}
+div.navBar .navbar{border:none;}
+div.navBar .navbar .nav-tabs{border:none;}
+div.navBar .navBarCenter{padding:0px auto;}
+div.navBar .navBarCenter #bs-example-navbar-collapse-1{text-align:center;}
+div.navBar .navBarCenter #bs-example-navbar-collapse-1 ul{display:inline-block;}
+div.navBar .navBarCenter #bs-example-navbar-collapse-1 ul li a{display:block;color:#8f8f8f;height:66px;line-height:66px;font-family:RobotoCondensed-Regular;}
+div.navBar .navBarCenter .navbar-header>a{margin-left:10%;}
+button.navbar-toggle{background-color:#1E7346;}
+.icon-bar{background-color:#fff;}
+.navbar-toggle{margin-right:30px;}
+div.navBar div.navbar-header{text-align:center;margin-top:10px;}
+.top-course{font-family:OpenSans-ExtraBold;font-size:32px;margin-top:20px;margin-bottom:10px;}
+.my-row-1{text-align:center;margin-top:-20px;}
+.my-row-1 h1{font-family:OpenSans-ExtraBold;font-size:32px;}
+.my-row-1 p:last-child{font-size:20px;}
+.allCourses{margin-top:20px;text-align:center;}
+.allCourses ul{display:inline-block;font-family:RobotoCondensed-Regular;}
+.allCourses ul li{margin-right:10px}
+.allCourses ul li:last-child{margin-right:0px}
+.allCourses .nav-pills>li>a{background-color:#f1f1f1;color:#666666;padding:6px 15px;text-transform:uppercase;}
+.allCourses .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{color:#fff;background-color:#31B051;}
+.listCourse{margin-top:50px;text-align:center;}
+.listCourse .courseName{text-align:center;margin:20px 8% 0px;font-size:18px;font-family:RobotoCondensed-Regular;margin-bottom:8px;}
+.listCourse .teacher{text-align:center;color:#888888;font-family:RobotoCondensed-Regular;font-size:17px}
+.listCourse .price{text-align:center;font-weight:bold;text-decoration:line-through;margin-bottom:15px;font-family:RobotoCondensed-Bold;font-size:20px;}
+.listCourse .price2{text-align:center;font-weight:bold;margin-bottom:35px;font-family:RobotoCondensed-Bold;font-size:20px;}
+.listCourse .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{display:inline;}
+.listCourse ul.nextCourse{margin-bottom:38px;}
+.listCourse ul.nextCourse li{width:20px;height:20px;border:1px solid #31B051;background-color:#bee1c8;display:inline-block;margin:1px;text-indent:-999px;border:1px solid #fff;border-radius:10px;cursor:pointer;}
+.listCourse ul.nextCourse li.active{background-color:#2c944a;}
+.listCourse .seeAll{border:1px solid #cdcdcd;color:#000;padding:13px 100px;text-decoration:none;font-size:19px;font-family:RobotoCondensed-Regular;}
+.listCourse a{color:#333;}
+.TestimonialHighlight{margin-top:40px;position:relative;}
+.TestimonialHighlight .content{position:absolute;top:0;left:0;padding-top:5%;text-align:center;color:#fff;}
+.TestimonialHighlight>img{width:100%;}
+.TestimonialHighlight .content .content2{color:#fff;font-size:2vw;text-align:center;font-family:UVNVan;}
+.TestimonialHighlight .content .content3{padding-top:11%;}
+.TestimonialHighlight .content p.name{font-size:1.5vw;margin-top:20px;font-family:RobotoCondensed-Bold;}
+.TestimonialHighlight .content p.org{font-size:1.2vw;font-family:RobotoCondensed-Regular;}
+.TestimonialHighlight .content .img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img{display:inline-block;}
+div.Testimonials{text-align:center;margin-top:50px;}
+div.Testimonials img{display:inline-block;}
+div.Testimonials .testimonial{font-family:OpenSans-Regular;font-size:35px;}
+div.Testimonials p.testimonial2{font-family:OpenSans-Regular;margin-top:10px;color:#747474;font-size:18px;}
+#carousel-example-generic1{margin-top:50px;}
+div.Testimonials .img{max-width:332px;max-height:332px;margin-bottom:10px;}
+div.Testimonials p.name{font-family:RobotoCondensed-Bold;font-size:140%;}
+div.Testimonials p.org{color:#9b9b9b;font-family:RobotoCondensed-Regular;font-size:110%;padding:0 10px;height:50px;}
+div.Testimonials p.content{color:#666666;padding:0 5%;font-family:RobotoCondensed-Light;font-size:120%;height:150px;overflow:auto;}
+div.Testimonials .carousel-indicators li{border:1px solid #bee1c8;background-color:#bee1c8;}
+div.Testimonials .carousel-indicators li.active{border:1px solid #888888;background-color:#2c944a;}
+div.Testimonials .carousel-control.right{left:auto;right:-145px;background-image:none;color:#000;}
+div.Testimonials .carousel-control.left{left:-122px;background-image:none;color:#000;}
+div.aboutUs{margin-top:120px;}
+div.aboutUs p.aboutUs1{text-align:center;font-size:32px;font-family:OpenSans-ExtraBold;}
+div.aboutUs p.aboutUs2{font-family:OpenSans-Regular;text-align:center;font-size:20px;color:#666666;margin-bottom:60px;}
+div.aboutUs img{vertical-align:middle;}
+div.aboutUs p.aboutUs3{font-weight:bold;font-family:OpenSans-Semibold;font-size:20px;}
+div.aboutUs p.aboutUs4{color:#666666;font-family:RobotoCondensed-Light;font-size:15px;}
+div.aboutUs div.my-row-2{margin-bottom:35px;}
+div.aboutUs div.my-row-2 img{margin-top:30%;}
+div.aboutUs .positionRelative img{position:absolute;left:0px;top:-131px;z-index:-1;}

@@ -1,0 +1,473 @@
+hr{
+    border-top: 1px solid #d1d1d1;
+}
+.hr-modal{
+    margin-top: 0px;
+}
+.my-row-1{
+    text-align: center;
+    color:#fff;
+}
+.my-row-1 h1{
+    font-size: 18px;
+    font-family: OpenSans-Bold;
+    line-height: 26px;
+}
+.my-row-1 p{
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+}
+.searchBox{
+    position: relative;
+    padding-top: 20px;
+}
+.searchIcon{
+    position: absolute;
+    top:6px;
+    right: 30px;
+    cursor: pointer
+}
+input#key_word{
+    height: 50px;
+    background-color: rgba(255,255,255,0.3);
+    color:#fff;
+}
+.header .form-control {
+    padding: 11px 10px 12px 12px;
+}
+
+.modal{
+    font-family: RobotoCondensed-Regular;
+}
+.modal .modal-content{
+    background-color: #e4e4e4;
+}
+.list-method-tabs > li{
+    width: 107px;
+    height: 185px;
+}
+.list-method-tabs > li > a{
+    height: 185px;
+}
+p.choose_method{font-family: OpenSans-ExtraBold;
+    font-size: 24px;
+    text-transform: uppercase;}
+
+/**********************************************************course summary***********************************************************************/
+.course-summary
+{
+    background-color: #e1e1e1;
+    font-family: RobotoCondensed-Regular;
+    font-size: 15px;
+}
+.course-summary .dir
+{
+    color:#7f7f7f;
+}
+.course-summary .course-name
+{
+
+    color:#2c944a;
+    font-size: 30px;
+}
+.course-summary .course-vote
+{
+    font-family: MyriadPro-Regular;
+}
+.course-summary .fa-star, .course-summary .fa-star-half-o
+{
+    color:red;
+}
+.course-summary .require{
+    margin-top: 20px;
+}
+.course-summary .require .lakita{
+    font-size: 20px;
+    font-family: RobotoCondensed-Regular;
+}
+.course-summary .col-md-4 .course-detail{
+    border-bottom: 1px dotted #666666;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+.course-summary .col-md-4 .course-detail:last-child{
+    border-bottom: none;
+}
+.course-summary .col-md-4 .price{
+    font-size: 30px
+}
+.course-summary .col-md-4 .voucher-input{
+    border: 1px solid #d1d1d1;
+    height: 35px;
+    display: inline-block;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.course-summary .col-md-4 .voucher-input input{
+    border: none;
+    padding: 5px 10px;
+}
+.course-summary .col-md-4 .voucher-input .go{
+    cursor: pointer;
+    border-left:  1px solid #d1d1d1;
+}
+.course-summary .col-md-4 .btn-purchase{
+    padding: 8px 40px;
+    background-image: none;
+    margin-top: 10px;
+}
+.course-summary .col-md-4 .course-detail select{
+    padding: 5px;
+    color: #666666;
+    display: inline-block;
+    width: 100%
+}
+
+
+/******************************************************** ĐỀ CƯƠNG *********************************************************************/
+div.outline{
+    font-family: RobotoCondensed-Regular;
+    font-size: 15px;
+}
+div.outline .nav-tabs{
+    background-color: #E1E1E1;
+}
+div.outline .tab a{
+    color:#7f7f7f;
+    font-size: 16px;
+}
+div.outline .tab li.active a{
+    color:#2c944a;
+}
+div.outline .title{
+    border-bottom: 1px dotted #e0e0e0;
+    padding-bottom: 9px;
+    margin-bottom: 16px;
+}
+#gv .col-md-6 .col-md-4 p{
+    color:#282828;
+}
+#vote i.red{
+    cursor: pointer;
+}
+#vote .btn-success{
+    background-image: none;
+    border-radius:0px;
+}
+#vote .input-name{
+    width: 90%;
+    padding: 9px 10px;
+}
+#vote ul.nextCourse{
+    margin-bottom: 38px;
+    list-style-type: none;
+    display: inline-block;
+}
+#vote ul.nextCourse li{
+    display: inline-block;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+#vote ul.nextCourse li.active{
+    background-color: #2c944a;
+    color:#fff;
+}
+#vote select.form-control{
+    display: inline;
+    width: auto;
+}
+.list-all-learn hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.list-all-learn ul{
+    list-style-type: none;
+}
+/************CÁC KHÓA HỌC***************/
+.listCourse .courseName{
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 10% 0px;
+    font-family: RobotoCondensed-Regular;
+    height: 48px;
+    color:#202020;
+}
+.listCourse .teacher{
+    text-align: center;
+    color: #888888;
+    font-family: RobotoCondensed-Regular;
+    font-size: 17px;
+    margin-top: 20px
+}
+.listCourse .price{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-family: RobotoCondensed-Bold;
+    font-size: 18px;
+}
+/************CÁC KHÓA HỌC (hết))***************/
+
+
+
+
+
+
+
+/**************************************************** POPUP ĐĂNG NHẬP ******************************************************************/
+#myModal3 {
+}
+#myModal3 .modal-content{
+    background: #e4e4e4;
+    padding: 5px 10px 10px 10px;
+}
+#myModal3 li a {
+    color:#999999;
+}
+#myModal3 li.active a {
+    color:#444444;
+}
+#myModal3 h4{
+    color:#848484;
+}
+#myModal3 .my-container-1{
+    padding: 10px;
+    background: #fff;
+}
+#myModal3 .my-container-1 > p{
+    color: #8a8a8a;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+.my-form-group-1 .my-form-control-1{
+    float:left;
+    margin-left: 10px;
+    height: 37px;
+    line-height: 37px;
+    padding-left: 10px;
+}
+.my-form-group-1 .my-form-control-1 fa{
+    color: #999999;
+}
+.my-form-group-1 .my-form-control-1:first-child{
+    width: 20%;
+    text-align: right;
+}
+.my-form-group-1 .my-form-control-1:nth-child(2){
+    padding-left: 10px;
+    width: 70%;
+}
+.my-form-group-1  .border{
+    border: 1px solid #d1d1d1;
+}
+.my-form-group-1 .my-form-control-1 input{
+    border: none;
+    height: 28px;
+    padding-left: 10px;
+    width: 91%;
+}
+
+.my-form-group-1 .my-form-control-1 input.checkbox1 {
+    width: auto;
+    padding: 0px;
+}
+.my-form-group-1 .my-form-control-1 .vr{
+    width: 1px;
+    height: 100%;
+    border-right: 1px dotted #000;
+    margin-left: 4px;
+}
+.my-btn{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #2c944a;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+.bgfb{
+    background: #496397;
+}
+.bggg{
+    background: #dc493f;
+}
+.social-login a{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.social-login > a:hover{
+    color:#fff;
+}
+.modal-header .close {
+    margin-top: -2px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 37px;
+    height: 37px;
+}
+#myModal3 .required{
+    margin-top: 5px;
+    color:#acacac;
+}
+.my-form-group-1 .return .my-btn{
+    background-color: #fff;
+    color:#575757;
+    border: 1px solid #d1d1d1;
+
+}
+.my-form-group-1 .return{
+    width: 50% !important;
+}
+.my-form-group-1 .confirm{
+    width: 47% !important;
+    text-align: left
+}
+#forgetPassword .forgetInfo{
+    background-color: #fdc689;
+    padding: 5px 0px;
+}
+
+
+/*==========================================MODAL MUA KHÓA HỌC========================================*/
+#modal-purchase-coursse .my-btn{
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #2c944a;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+}
+
+/*===========================================NGÂN LƯỢNG============================================*/
+ul.cardList{
+    list-style-type: none;
+}
+#ttNganluong {
+    background: url("../img/napthe.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    text-indent: -3000px;
+    vertical-align: middle;
+    width: 122px;
+}
+ul.bankList {
+    clear: both;
+    height: 202px;
+    width: 636px;
+}
+ul.bankList li {
+    list-style-position: outside;
+    list-style-type: none;
+    cursor: pointer;
+    float: left;
+    margin-right: 0;
+    padding: 5px 2px;
+    text-align: center;
+    width: 90px;
+}
+.list-content li {
+    list-style: none outside none;
+    margin: 0 0 10px;
+}
+
+.list-content li .boxContent {
+    display: none;
+    width: 636px;
+    border:1px solid #cccccc;
+    padding:10px;
+}
+.list-content li.active .boxContent {
+    display: block;
+}
+.list-content li .boxContent ul {
+    height:280px;
+}
+
+i.VISA, i.MASTE, i.AMREX, i.JCB, i.VCB, i.TCB, i.MB, i.VIB, i.ICB, i.EXB, i.ACB, i.HDB, i.MSB, i.NVB, i.DAB, i.SHB, i.OJB, i.SEA, i.TPB, i.PGB, i.BIDV, i.AGB, i.SCB, i.VPB, i.VAB, i.GPB, i.SGB,i.NAB,i.BAB
+{ width:80px; height:30px; display:block; background:url(https://lakita.vn/styles/v2.0/img/course-purchase/bank_logo.png) no-repeat;}
+i.MASTE { background-position:0px -31px}
+i.AMREX { background-position:0px -62px}
+i.JCB { background-position:0px -93px;}
+i.VCB { background-position:0px -124px;}
+i.TCB { background-position:0px -155px;}
+i.MB { background-position:0px -186px;}
+i.VIB { background-position:0px -217px;}
+i.ICB { background-position:0px -248px;}
+i.EXB { background-position:0px -279px;}
+i.ACB { background-position:0px -310px;}
+i.HDB { background-position:0px -341px;}
+i.MSB { background-position:0px -372px;}
+i.NVB { background-position:0px -403px;}
+i.DAB { background-position:0px -434px;}
+i.SHB { background-position:0px -465px;}
+i.OJB { background-position:0px -496px;}
+i.SEA { background-position:0px -527px;}
+i.TPB { background-position:0px -558px;}
+i.PGB { background-position:0px -589px;}
+i.BIDV { background-position:0px -620px;}
+i.AGB { background-position:0px -651px;}
+i.SCB { background-position:0px -682px;}
+i.VPB { background-position:0px -713px;}
+i.VAB { background-position:0px -744px;}
+i.GPB { background-position:0px -775px;}
+i.SGB { background-position:0px -806px;}
+i.NAB { background-position:0px -837px;}
+i.BAB { background-position:0px -868px;}
+
+ul.cardList li {
+    cursor: pointer;
+    float: left;
+    margin-right: 0;
+    padding: 5px 4px;
+    text-align: center;
+    width: 90px;
+}
+
+
+#formcustom{
+    margin: 20px 0px ;
+}
+
+#formcustom select{
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: #f1f2f2;
+    font-weight: bold;
+}
+
+#formcustom input{
+    border-radius: 5px;
+    border-style: ridge;
+    padding: 3px 9px;
+    font-weight: bold;
+    background-color: #f1f2f2;
+}
+
+
+

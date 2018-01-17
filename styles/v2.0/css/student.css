@@ -1,0 +1,221 @@
+div.header img.avatar{
+    width:50px;
+    height: 50px;
+}
+.my-row-1{
+    color:#fff;
+}
+.my-row-1 h1{
+    font-family: OpenSans-ExtraBold;
+    font-size: 24px;
+}
+.my-row-1 p{
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+}
+.searchBox{
+    position: relative;
+    padding-top: 20px;
+}
+.searchIcon{
+    position: absolute;
+    top:6px;
+    right: 30px;
+    cursor: pointer
+}
+input#key_word{
+    height: 50px;
+    background-color: rgba(255,255,255,0.3);
+    color:#fff;
+}
+.header .form-control {
+    padding: 11px 10px 12px 12px;
+}
+
+/*********************************************SIDE BAR****************************************************/
+#menu_btn {
+    border: 1px solid #ccc;
+    background-color: #2c944a;
+    color: #fff;
+    width: 75px;
+    margin: -2px 0px;
+    font-family: RobotoCondensed-Light;
+}
+.dropdown-menu{
+    border: 1px solid #ccc;
+   
+    background-color: #2c944a;
+    color: #fff;
+    margin: -2px 0px;
+    font-family: RobotoCondensed-Light;
+}
+
+.all-side{
+    border: 1px solid #ccc;
+    width: 242px;
+    background-color: #2c944a;
+    color: #fff;
+    margin: -2px 0px;
+    font-family: RobotoCondensed-Light;
+}
+
+.all-side button {
+    margin: 0px 15px;
+    padding-left: 25px;
+    background-color: #167f34;
+    border: none;
+    text-align: left;
+    width: 242px;
+    height: 42px;
+}
+.all-side ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.all-side ul {
+    list-style: none;
+}
+.all-side ul li {
+    margin-top: 10px;
+}
+.all-side ul li.active {    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding: 12px 0px 10px 20px;
+    font-weight: bold;
+    background-color: #fff;
+     font-family: RobotoCondensed-Bold;
+}
+.all-side ul li.active a{ 
+    color: #2c944a;
+    display: block;
+    width: 100%;
+}
+.all-side ul hr {
+    margin-top: 10px;
+    margin-left: -9px;
+    width: 218px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #8c8c8c;
+}
+
+.all-side1{
+    border: 1px solid #ccc;
+    width: 10px;
+    background-color: #2c944a;
+    color: #fff;
+    margin: -2px 0px;
+    font-family: RobotoCondensed-Light;
+}
+
+.all-side1 button {
+    margin: 0px 15px;
+    padding-left: 25px;
+    background-color: #167f34;
+    border: none;
+    text-align: left;
+    width: 242px;
+    height: 42px;
+}
+.all-side1 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.all-side1 ul {
+    list-style: none;
+}
+.all-side1 ul li {
+    margin-top: 10px;
+}
+.all-side1 ul li.active {    
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding: 12px 0px 10px 20px;
+    font-weight: bold;
+    background-color: #fff;
+     font-family: RobotoCondensed-Bold;
+}
+.all-side1 ul li.active a{ 
+    color: #2c944a;
+    display: block;
+    width: 100%;
+}
+.all-side1 ul hr {
+    margin-top: 10px;
+    margin-left: -9px;
+    width: 218px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #8c8c8c;
+}
+
+
+/*********************************************SIDE BAR (HẾT)****************************************************/
+
+/************CÁC KHÓA HỌC***************/
+.listCourse .courseName{
+    text-align: center;
+    margin: 14px 10% 0px;
+    font-family: RobotoCondensed-Regular;
+/*    height: 48px;*/
+    color:#202020;
+        font-size: 16px;
+}
+.listCourse .teacher{
+    text-align: center;
+    color: #888888;
+    font-family: RobotoCondensed-Regular;
+}
+.listCourse .price{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+    font-family: RobotoCondensed-Bold;
+}
+/************CÁC KHÓA HỌC (hết))***************/
+
+/*==================================NẠP TIỀN VÀO TÀI KHOẢN========================================*/
+.group3{
+    font-family: RobotoCondensed-Regular;
+}
+.group3 a{
+    width: 865px;
+     font-family: RobotoCondensed-Regular;
+     margin-top: 10px;
+}
+.group3 a{
+    color:#666666;
+}
+.group3 .btn-success{
+    background-image: none;
+    padding: 7px 40px;
+}
+.group4{
+    font-family: RobotoCondensed-Regular;
+}
+.group4 a{
+     font-family: RobotoCondensed-Regular;
+     margin-top: 10px;
+}
+.group4 a{
+    color:#666666;
+}
+.group4 .btn-success{
+    background-image: none;
+    padding: 7px 40px;
+}
+
+/*lịch sử giao dịch*/
+
+.transaction{
+    font-size: 15px
+}
