@@ -32,4 +32,10 @@ class Student_model extends MY_Model {
 //        return $query->result_array();
 //    }
 
+    public function getUserInfo($uid){
+        $input = [];
+        $input['select'] = 'id, name, email, id_fb, thumbnail';
+        $input['where'] = ['id' => $uid];
+        return $this->load_all($input);
+    }
 }

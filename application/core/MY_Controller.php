@@ -5,13 +5,8 @@ class MY_Controller extends CI_Controller {
     var $data = array();
 
     function __construct() {
+       header('Access-Control-Allow-Origin: *'); 
         parent::__construct();
-        
-       
-        $this->data['setting'] = $this->lib_mod->detail('setting', array('id' => 1));
-        $this->data['category_news'] = $this->lib_mod->load_all('category_3s', '', array('status' => 1, 'type_id' => 4, 'parent' => 0), '', '', array('sort' => 'desc'));
-        $this->data['courses_right'] = $this->lib_mod->load_all('courses', '', array('status' => 1, 'hot' => 1), 8, '', array('sort' => 'desc'));
-        $this->data['courses_top'] = $this->lib_mod->load_all('courses', '', array('status' => 1), '', '', array('sort' => 'desc'));
     }
 
     protected function _getUserIP() {

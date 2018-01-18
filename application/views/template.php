@@ -14,7 +14,7 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>-->
         <!--ghi thời gian học viên đang đăng nhâp-->
-        <?php //$this->load->view('student/watching_video') ?>
+        <?php $this->load->view('student/watching_video') ?>
         <?php
        
         ?>

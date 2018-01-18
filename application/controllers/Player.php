@@ -3,7 +3,8 @@
 class Player extends MY_Controller {
 
     function index() {
-        $input = $this->input->post('video_id');
+      $input = $this->input->post('video_id'); 
+        
         if (empty($input)) {
             die;
         }
@@ -17,25 +18,15 @@ class Player extends MY_Controller {
             die;
         }
         $primary_video = $this->lib_mod->detail('learn', array('id' => $id));
+        
         if (!count($primary_video)) {
             die;
         }
-        $is_playable = $this->session->tempdata('is_playable');
-        if (!isset($is_playable) || $primary_video[0]['id'] != $is_playable) {
-            die;
-        }
-        /*         * *****************for member has not flash player ****************************** */
-        $is_trial_view = $this->session->tempdata('is_trial_view');
-
-//        if ((isset($is_trial_view) && $is_trial_view == 'yes')) {
-//            echo 'https://lakita.vn/' . $primary_video[0]['video_file'];
-//            die;
-//        }
+     
         $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
         $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
         $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
         $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
-        $webOS = stripos($_SERVER['HTTP_USER_AGENT'], "webOS");
         if ($iPod || $iPhone || $iPad) {
             echo "http://lakita.vn:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . "/playlist.m3u8";
             die;
@@ -43,11 +34,7 @@ class Player extends MY_Controller {
             echo "rtsp://lakita.vn:1935/vod/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
             die;
         } else {
-            // if ($this->input->post('hayFlash') == 'yes')
             echo "http://lakita.vn:1935/vod/_definst_/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd';
-            // else
-            //   echo 'https://lakita.vn/' . $primary_video[0]['video_file'];
-            //  echo "rtmpt://video.lakita.com.vn:1935/vod/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
             die;
         }
     }

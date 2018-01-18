@@ -41,20 +41,8 @@
     <meta name="distribution" content="Global"/>
     <meta name="rating" content="General"/>
     <meta name="google-site-verification" content="sMPDm2UwHcFhdiIMKCrV_QFe7rwUT7P0-gkEZkr-k50" />
-    <meta itemprop="name" content="<?php
-    if (isset($meta_title)) {
-        echo $meta_title;
-    } else {
-        echo $setting[0]['name'];
-    }
-    ?>" /> 
-    <meta itemprop="description" content="<?php
-    if (isset($meta_description)) {
-        echo $meta_description;
-    } else {
-        echo $setting[0]['description'];
-    }
-    ?>" /> 
+    <meta itemprop="name" content="lakita.vn" /> 
+    <meta itemprop="description" content="Chuyên cung cấp các khóa đào tạo trực tuyến về tin học văn phòng và công nghệ thông tin" /> 
     <script>
         Notification.requestPermission(function (p) {
             if (p === "denied")
@@ -67,7 +55,7 @@
     <script type="text/javascript">
         console.log("%cLưu ý: Đây là chế độ dành cho nhà phát triển. Bạn không nên truy cập vào phần này. Xin cảm ơn!", "background: red; color: yellow; font-size: 40px;font-weight: bold;");
     </script>
-    <link rel="shortcut icon" href="<?php echo 'https://lakita.vn/' . $setting[0]['favicon'] ?>" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo 'https://lakita.vn/data/source/setting/logo-icon.ico'; ?>" type="image/x-icon" />
 
     <link type="text/css" rel="stylesheet" href="<?php echo base_url(); ?>styles/v2.0/css/reset.css?ver=<?php echo _VER_CACHED_ ?>" />
 

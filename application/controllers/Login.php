@@ -15,9 +15,8 @@ class Login extends CI_Controller {
 
     public function index() {
         $get = $this->input->get();
-       $this->load->model('uid_model');
+        $this->load->model('uid_model');
         if (!isset($get['access_token']) || $get['access_token'] != md5('lakita2017')) {
-          
             redirect('https://lakita.vn');
         }
         if (!isset($get['token'])) {
@@ -31,6 +30,7 @@ class Login extends CI_Controller {
         if (empty($uid)) {
             redirect('https://lakita.vn');
         } else {
+            $this->session->set_userdata('token', $get['token_login']);
             $this->session->set_userdata('user_id', $uid[0]['uid']);
             $last_page = $this->session->userdata('last_page');
             redirect($last_page);

@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/v2.0/css/style.bootstrap12.lakita.css?ver=<?php echo _VER_CACHED_ ?>" />
-<script type="text/javascript" src="<?php echo base_url(); ?>plugin/ckeditor/ckeditor.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<script type="text/javascript" src="<?php echo base_url(); ?>styles/v2.0/js/swfobject.js?ver=<?php echo _VER_CACHED_ ?>" ></script>
+<link rel="stylesheet" type="text/css" href="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/css/style.bootstrap12.lakita.css?ver=<?php echo _VER_CACHED_ ?>" />
+<script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/ckeditor/ckeditor.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+<script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/js/swfobject.js?ver=<?php echo _VER_CACHED_ ?>" ></script>
 <style>
     .float_video{
         position: fixed;
@@ -91,7 +91,7 @@
                                             echo "rtsp://lakita.vn:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
                                             ?>
                                                ">
-                                                <img src="<?php echo base_url(); ?>styles/v2.0/img/mobi/player.png" style="max-width: 100%"/>
+                                                <img src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/img/mobi/player.png" style="max-width: 100%"/>
                                             </a>
                                         </div>
                                         <?php
@@ -104,8 +104,8 @@
                                     ?>
                                     <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . 612 . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
                                 <?php } ?>
-<!--                                <script type="text/javascript" src="<?php echo base_url(); ?>plugin/jwplayer/jwplayer.js"></script>
-                            <script type="text/javascript" src="<?php echo base_url(); ?>plugin/jwplayer/jwplayer.html5.js"></script>
+<!--                                <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.js"></script>
+                            <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.html5.js"></script>
                             <script type="text/javascript">jwplayer.key = "N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==";</script>-->
                                  <script type="text/javascript" src="https://content.jwplatform.com/libraries/BhGRfCt5.js"></script>
                                 <input type="hidden" id="auto_next" value="1" />
@@ -126,7 +126,7 @@
                     <p><i class="fa fa-toggle-on" aria-hidden="true"></i><strong> Giảng viên</strong></p>
                 </div>
                 <div class="col-md-3 gr1-col-2">
-                    <img src="<?php echo base_url(); ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img2.png"> &nbsp;&nbsp;
+                    <img src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img2.png"> &nbsp;&nbsp;
                     <a class="love_link">
                         <?php if (!count($love_course)) { ?>
                             <i class="fa fa-heart-o red" aria-hidden="true"></i>  Tôi thích khóa học này
@@ -134,7 +134,7 @@
                             <i class="fa fa-heart red" aria-hidden="true"></i>  Tôi thích khóa học này
                         <?php } ?>
                     </a> &nbsp;&nbsp;
-                    <img src="<?php echo base_url(); ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img2.png">
+                    <img src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img2.png">
                 </div>
                 <div class="col-md-2 gr1-col-3">
                     <a ><strong>Đánh giá &nbsp;&nbsp;</strong></a>
@@ -148,7 +148,7 @@
 
                 </div>
                 <div class="col-md-2 gr1-col-4">
-                    <img src="<?php echo base_url(); ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img3.png">
+                    <img src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/dungtt/img/bootstrap/12/gr2-img3.png">
                     <a> Nhấn vào đây để đánh giá  </a>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                             if (!empty($student[0]['id_fb'])) {
                                 echo 'https://graph.facebook.com/' . $student[0]['id_fb'] . '/picture?type=large';
                             } else {
-                                echo base_url() . 'styles/images/people/110/user.png';
+                                echo 'https://lakita.vn/' . 'styles/images/people/110/user.png';
                             }
                         }
                         ?>" alt="" class="img-circle img-responsive avatar" />
@@ -256,7 +256,7 @@
                         <?php foreach ($chapter as $key => $value) { ?>
                             <p class="category"><?php echo $value['name']; ?></p>
                             <?php if ($trial_learn == 1 && $value['id'] != 17) { ?>
-                                <a class="btn btn-success" href="<?php echo base_url() . $curr_course[0]['slug'] . '-3' . $curr_course[0]['id']; ?>.html"> Nâng cấp </a>
+                                <a class="btn btn-success" href="<?php echo 'https://lakita.vn/' . $curr_course[0]['slug'] . '-3' . $curr_course[0]['id']; ?>.html"> Nâng cấp </a>
                             <?php } ?>
                             <ul class="sidebar-block list-group list-group-menu list-group-minimal">
                                 <?php
@@ -269,7 +269,7 @@
                                                 <?php
                                             } else {
                                                 ?>
-                                                href="<?php echo base_url() . $lvalue['slug'] . '-4' . $lvalue['id']; ?>.html" 
+                                                href="<?php echo 'https://lakita.vn/' . $lvalue['slug'] . '-4' . $lvalue['id']; ?>.html" 
                                             <?php } ?>
                                             title="<?php echo $lvalue['name']; ?>"><?php
                                                 if (!isset($lvalue['learn_status']))
@@ -313,7 +313,7 @@
                                             $filename = end($filename);
                                             ?>
                                             <li class="list-group-item">
-                                                <a href="<?php echo base_url() . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
+                                                <a href="<?php echo 'https://lakita.vn/' . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
                                                     <i class="fa fa-file-text"></i>&nbsp;&nbsp;
                                                     <?php
                                                     if (!empty($attach_desc[$fkey]))
@@ -370,7 +370,7 @@
                                             <h4 class="modal-title" id="myModalLabel">Tải bài tập</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <form class="form-horizontal" role="form" action="<?php echo base_url(); ?>student2/studying/action_upload" enctype="multipart/form-data" method="POST" accept-charset="utf-8">
+                                            <form class="form-horizontal" role="form" action="<?php echo 'https://lakita.vn/'; ?>student2/studying/action_upload" enctype="multipart/form-data" method="POST" accept-charset="utf-8">
                                                 <div class="gr5-row-2 margintop22" role="tabpanel">
                                                     <div class="gr5-form">
                                                         <div class="row gr5-row2-form2">
@@ -488,7 +488,7 @@
                                                 <?php
                                             } else {
                                                 ?>
-                                                href="<?php echo base_url() . $lvalue['slug'] . '-4' . $lvalue['id']; ?>.html" 
+                                                href="<?php echo 'https://lakita.vn/' . $lvalue['slug'] . '-4' . $lvalue['id']; ?>.html" 
                                             <?php } ?>
                                             title="<?php echo $lvalue['name']; ?>"><?php
                                                 if (!isset($lvalue['learn_status']))
@@ -528,7 +528,7 @@
                                             $filename = end($filename);
                                             ?>
                                             <li class="list-group-item">
-                                                <a href="<?php echo base_url() . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
+                                                <a href="<?php echo 'https://lakita.vn/' . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
                                                     <i class="fa fa-file-text"></i>&nbsp;&nbsp;
                                                     <?php
                                                     if (!empty($attach_desc[$fkey]))
@@ -585,15 +585,15 @@
 
 
 
-<script src="<?php echo base_url(); ?>styles/v2.0/js/learn.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<!--<script src="<?php echo base_url(); ?>styles/v2.0/js/scrt.js"></script>  -->
+<script src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/js/learn.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+<script src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+<!--<script src="<?php echo 'https://lakita.vn/'; ?>styles/v2.0/js/scrt.js"></script>  -->
 <?php $this->load->view('student/action_comment'); ?>
 <?php
 if ($trial_learn == 1) {
     $this->session->set_tempdata('curr_course_id', $course_id, 3600 * 12);
     ?>
-    <a href="<?php echo base_url() . $curr_course[0]['slug'] . '-3' . $curr_course[0]['id']; ?>.html">
+    <a href="<?php echo 'https://lakita.vn/' . $curr_course[0]['slug'] . '-3' . $curr_course[0]['id']; ?>.html">
         <img src="https://lakita.vn/styles/v2.0/img/event/hoc-thu.gif" class="img-responsive" style="position: fixed; bottom: 0; z-index: 100000000000;" />
     </a>
     <?php
