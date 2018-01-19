@@ -1,9 +1,8 @@
-<?php if(isset($page) && !empty($page)){ ?>
-<input type="hidden" class="pagenum" value="<?php echo $page ?>" /><input type="hidden" class="total-page" value="<?php echo $pages ?>" />
+<?php if (isset($page) && !empty($page)) { ?>
+    <input type="hidden" class="pagenum" value="<?php echo $page ?>" /><input type="hidden" class="total-page" value="<?php echo $pages ?>" />
 <?php } ?>
 <?php
-
-if (isset($comment[0]))
+if (isset($comment[0])) {
     foreach ($comment as $key => $cmt1) {
         $comment2 = $this->lib_mod->load_all('comment', '', array('parent' => $cmt1['id']), '', '', array('createdate' => 'asc'));
         $student = $this->lib_mod->detail('student', array('id' => $cmt1['student_id']));
@@ -12,13 +11,14 @@ if (isset($comment[0]))
             <div class="row margintop10">
                 <div class="col-md-2 text-right">
                     <img src="<?php
-                    if (isset($student[0]['id_fb']) && !empty($student[0]['id_fb']))
+                    if (isset($student[0]['id_fb']) && !empty($student[0]['id_fb'])) {
                         echo 'https://graph.facebook.com/' . $student[0]['id_fb'] . '/picture?type=large';
-                    else {
-                        if (isset($student[0]['thumbnail']) && !empty($student[0]['thumbnail']))
+                    } else {
+                        if (isset($student[0]['thumbnail']) && !empty($student[0]['thumbnail'])) {
                             echo 'https://lakita.vn/' . $student[0]['thumbnail'];
-                        else
+                        } else {
                             echo base_url() . 'styles/images/people/110/user.png';
+                        }
                     }
                     ?>" alt="" class="img-circle height-30 width-30" />
                 </div>
@@ -75,7 +75,7 @@ if (isset($comment[0]))
             </div>
             <?php
         }
-        if (isset($comment2[0]))
+        if (isset($comment2[0])) {
             foreach ($comment2 as $key => $cmt2) {
                 $student2 = $this->lib_mod->detail('student', array('id' => $cmt2['student_id']));
                 if (isset($student2[0])) {
@@ -83,23 +83,25 @@ if (isset($comment[0]))
                     <div class="row margintop10">
                         <div class="col-md-2 text-right marginleft25 paddingright0">
                             <img src="<?php
-                            if (isset($student2[0]['id_fb']) && !empty($student2[0]['id_fb']))
+                            if (isset($student2[0]['id_fb']) && !empty($student2[0]['id_fb'])) {
                                 echo 'https://graph.facebook.com/' . $student2[0]['id_fb'] . '/picture?type=large';
-                            else {
-                                if (isset($student2[0]['thumbnail']) && !empty($student2[0]['thumbnail']))
+                            } else {
+                                if (isset($student2[0]['thumbnail']) && !empty($student2[0]['thumbnail'])) {
                                     echo 'https://lakita.vn/' . $student2[0]['thumbnail'];
-                                else
+                                } else {
                                     echo base_url() . 'styles/images/people/110/user.png';
+                                }
                             }
                             ?>" alt="" class="img-circle height-30 width-30" />
                         </div>
                         <div class="col-md-9">
                             <span> <span class="lakita"> 
                                     <?php
-                                    if ($student2[0]['id'] == 3073 || $student2[0]['id'] == 4909)
+                                    if ($student2[0]['id'] == 3073 || $student2[0]['id'] == 4909) {
                                         echo '<strong>' . $student2[0]['name'] . '</strong>';
-                                    else
+                                    } else {
                                         echo $student2[0]['name'];
+                                    }
                                     ?> 
                                 </span> trả lời lúc &nbsp;
                                 <?php echo date('H:i:s d/m/Y', $cmt2['createdate']); ?></span>
@@ -135,15 +137,13 @@ if (isset($comment[0]))
 
                             </div>
                         <?php } ?>
-
-
                     </div>
-
-
                     <?php
                 }
             }
+        }
         ?>
         <hr>
         <?php
-    } 
+    }
+} 

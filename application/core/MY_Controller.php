@@ -5,8 +5,8 @@ class MY_Controller extends CI_Controller {
     var $data = array();
 
     function __construct() {
-       header('Access-Control-Allow-Origin: *'); 
         parent::__construct();
+       
     }
 
     protected function _getUserIP() {
@@ -26,6 +26,7 @@ class MY_Controller extends CI_Controller {
     }
 
     protected function _check_exist_login($id, $load_from_ajax = true) {
+       // return true;
         // kiểm tra tài khoản có đăng nhập từ máy tính khác không
         $check_watching = $this->lib_mod->load_all('watching_time', 'time, token', array('student_id' => $id), '', '', '');
         //   echo  (!empty($check_watching) && abs($check_watching[0]['time'] - time()) < 60);die;
@@ -53,7 +54,6 @@ class MY_Controller extends CI_Controller {
                 }
             }
         }
-        //  hết kiểm tra
     }
 
 }

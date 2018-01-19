@@ -775,14 +775,13 @@ class Student extends MY_Controller {
     function watching_time() {
         $student_current_id = $this->input->post('student_current_id');
         $browerInfo = $this->input->post('info');
-        $token = $this->session->userdata('token');
+        echo $token = $this->session->userdata('token');
         $date = time();
         $check_student_id = $this->lib_mod->load_all('watching_time', 'student_id', array('student_id' => $student_current_id), '', '', '');
         if (!empty($check_student_id)) {
-            $this->lib_mod->update('watching_time', array('student_id' => $student_current_id), 
-                    array('time' => $date, 'ip' => $this->_getUserIP(), 'token' => $token, 'info' => $browerInfo));
+            $this->lib_mod->update('watching_time', array('student_id' => $student_current_id), array('time' => $date, 'ip' => $this->_getUserIP(), 'token' => $token, 'info' => $browerInfo));
         } else {
-            $this->lib_mod->insert('watching_time', array('student_id' => $student_current_id, 'time' => $date, 
+            $this->lib_mod->insert('watching_time', array('student_id' => $student_current_id, 'time' => $date,
                 'ip' => $this->_getUserIP(),
                 'token' => $token, 'info' => $browerInfo));
         }
