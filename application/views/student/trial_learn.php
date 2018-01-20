@@ -43,52 +43,26 @@
                         <div class="container-fluid">
                             <div class="js-video widescreen">
                                 <?php
-                                if (!empty($curr_learn[0]['video_file'])) {
-                                    $value = $curr_learn[0]['id'];
-//Detect special conditions devices
-                                    $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
-                                    $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
-                                    $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
-                                    $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
-                                    // $webOS = stripos($_SERVER['HTTP_USER_AGENT'], "webOS");
-//do something with this information
-                                    if ($iPod || $iPhone || $iPad) {
-                                        ?>
-                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
-                                        <?php
-                                    } else if ($Android) {
-                                        ?>
-
-                                        <a href="
-                                        <?php
-                                        $primary_video = $this->lib_mod->detail('learn', array('id' => $value), '');
-                                        echo "rtsp://lakita.vn:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
-                                        ?>
-                                           ">
-                                            <img src="<?php echo base_url(); ?>styles/v2.0/img/mobi/player.png" class="img-responsive"/>
-                                        </a>
-                                        <?php
-                                    } else {
-                                        ?>
-                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
-                                        <?php
-                                    }
+                                
+                                $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
+                                $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
+                                $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
+                                $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
+                                if ($iPod || $iPhone || $iPad) {
+                                    $this->load->view('student/learn/player/iphone');
+                                } else if ($Android) {
+                                    $this->load->view('student/learn/player/android');
                                 } else {
-                                    ?>
-                                    <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . 612 . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
-                                <?php } ?>
-<!--                                <script type="text/javascript" src="<?php echo base_url(); ?>plugin/jwplayer/jwplayer.js"></script>
-                            <script type="text/javascript" src="<?php echo base_url(); ?>plugin/jwplayer/jwplayer.html5.js"></script>
-                            <script type="text/javascript">jwplayer.key = "N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==";</script>-->
-                                <script type="text/javascript" src="https://content.jwplatform.com/libraries/BhGRfCt5.js"></script>
-                                <?php $this->session->set_tempdata('is_playable', $curr_id, 3600 * 24); ?>
+                                    $this->load->view('student/learn/player/desktop');
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <?php if (!$this->agent->is_mobile()) { ?>
+<?php if (!$this->agent->is_mobile()) { ?>
             <div class="row gr1-row-2">
                 <div class="col-md-5 gr1-col-1">
                     <p><i class="fa fa-toggle-on" aria-hidden="true"></i><strong> Giảng viên</strong></p>
@@ -176,7 +150,7 @@
 
             <!--============================thảo luận ================================================-->
             <div id="list_cmt">
-            <?php $this->load->view('course/load_cmt'); ?>
+    <?php $this->load->view('course/load_cmt'); ?>
             </div>
             <!--============================thảo luận (hết) ==========================================-->
     <?php } ?>
@@ -214,7 +188,7 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="dsbaihoc">
-                            <?php foreach ($chapter as $key => $value) { ?>
+    <?php foreach ($chapter as $key => $value) { ?>
                             <p class="category"><?php echo $value['name']; ?></p>
                             <ul class="sidebar-block list-group list-group-menu list-group-minimal">
                                 <?php
@@ -222,7 +196,7 @@
                                     ?>
                                     <li id = "scroll<?php echo $lvalue['sort']; ?>" class="list-group-item <?php if ($curr_id == $lvalue['id']) echo 'active'; ?>">
                                         <a title="<?php echo $lvalue['name']; ?>"><i class='fa fa-circle-o'></i>
-                                    <?php echo 'Bài ' . $lvalue['sort'] . ': ' . $lvalue['name']; ?>
+            <?php echo 'Bài ' . $lvalue['sort'] . ': ' . $lvalue['name']; ?>
                                             <span class="badge"><?php echo $lvalue['length']; ?></span>
                                         </a></li>
                             <?php } ?>
@@ -277,7 +251,7 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="dsbaihoc">
-                            <?php foreach ($chapter as $key => $value) { ?>
+    <?php foreach ($chapter as $key => $value) { ?>
                             <p class="category"><?php echo $value['name']; ?></p>
                             <ul class="sidebar-block list-group list-group-menu list-group-minimal">
                                 <?php
@@ -285,7 +259,7 @@
                                     ?>
                                     <li id = "scroll<?php echo $lvalue['sort']; ?>" class="list-group-item <?php if ($curr_id == $lvalue['id']) echo 'active'; ?>">
                                         <a title="<?php echo $lvalue['name']; ?>"><i class='fa fa-circle-o'></i>
-                                    <?php echo 'Bài ' . $lvalue['sort'] . ': ' . $lvalue['name']; ?>
+            <?php echo 'Bài ' . $lvalue['sort'] . ': ' . $lvalue['name']; ?>
                                             <span class="badge"><?php echo $lvalue['length']; ?></span>
                                         </a></li>
                             <?php } ?>
@@ -310,10 +284,10 @@
     <img src="https://lakita.vn/styles/v2.0/img/event/hoc-thu.gif" class="img-responsive" style="position: fixed; bottom: 0; z-index: 100000000000;" />
 </a>
 <div>
-<?php //$this->load->view('course/detail/vote_modal');  ?>
+<?php //$this->load->view('course/detail/vote_modal');   ?>
 </div>
 <script src="<?php echo base_url(); ?>styles/v2.0/js/learn.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+<!--<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>-->
 <!--<script src="<?php echo base_url(); ?>styles/v2.0/js/scrt.js"></script>  -->
 <?php
 //if ($trial_learn == 1 && $curr_id == 269) {

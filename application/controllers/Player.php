@@ -2,41 +2,42 @@
 
 class Player extends MY_Controller {
 
-    function index() {
-      $input = $this->input->post('video_id'); 
-        
+    function index() {        
+        $input = $this->input->post('video_id');
         if (empty($input)) {
             die;
         }
         $arr_id = explode('#', $input);
         $id = $arr_id[2];
-        if ($id == 0) {
-            echo 'https://lakita.vn/data/source/video/intro.mp4';
-            die;
-        }
         if (!isset($arr_id[2]) || empty($arr_id[2])) {
             die;
         }
-        $primary_video = $this->lib_mod->detail('learn', array('id' => $id));
-        
-        if (!count($primary_video)) {
+        $this->load->model('learn_model');
+        $input = [];
+        $input['select'] = 'video_file';
+        $input['where'] = ['id' => $id];
+        $primary_video = $this->learn_model->load_all($input);
+        //$primary_video = $this->lib_mod->detail('learn', array('id' => $id));
+
+        if (empty($primary_video)) {
             die;
         }
-     
+
         $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
         $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
         $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
-        $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
+        // $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
         if ($iPod || $iPhone || $iPad) {
-            echo "http://lakita.vn:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . "/playlist.m3u8";
-            die;
-        } else if ($Android) {
-            echo "rtsp://lakita.vn:1935/vod/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
+            echo "http://171.244.19.161:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . "/playlist.m3u8";
             die;
         } else {
-            echo "http://lakita.vn:1935/vod/_definst_/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd';
+            echo "http://171.244.19.161:1935/vod/_definst_/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd';
             die;
         }
+//        else if ($Android) {
+//            echo "rtsp://lakita.vn:1935/vod/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']);
+//            die;
+//        } 
     }
 
     function next_learn() {
@@ -53,7 +54,7 @@ class Player extends MY_Controller {
 
         $input_curr_learn_chapter['select'] = 'id,name,sort,courses_id,chapter_id,slug';
         $input_curr_learn_chapter['where'] = array('chapter_id' => $curr_learn[0]['chapter_id'],
-            'courses_id' => $curr_learn[0]['courses_id'],'status' => 1);
+            'courses_id' => $curr_learn[0]['courses_id'], 'status' => 1);
         $input_curr_learn_chapter['order'] = array('sort' => 'asc');
         //danh sách bài học thuộc cùng 1 chương với bài học hiện tại
         $curr_learn_chapter = $this->learn_model->load_all($input_curr_learn_chapter);
@@ -75,7 +76,7 @@ class Player extends MY_Controller {
 
             if (count($next_chapter)) {
                 //danh sách bài học trong chương tiếp theo của chương hiện tại
-                $next_learn_chapter = $this->learn_model->load_all(array('where' => array('chapter_id' => $next_chapter[0]['id'],'status' => 1), 'order' => array('sort' => 'asc')));
+                $next_learn_chapter = $this->learn_model->load_all(array('where' => array('chapter_id' => $next_chapter[0]['id'], 'status' => 1), 'order' => array('sort' => 'asc')));
 
                 //bài học đầu tiên của chương tiếp theo khóa học hiện tại
                 $first_learn_next_chapter = array_shift($next_learn_chapter);

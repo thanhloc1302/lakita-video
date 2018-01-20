@@ -190,7 +190,7 @@ if ($this->agent->is_mobile()) {
 </div>
 
 <script src="<?php echo base_url(); ?>styles/v2.0/js/learn.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+
 <?php $this->load->view('student/action_comment'); ?>
 <?php
 if ($trial_learn == 1) {

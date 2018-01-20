@@ -68,7 +68,7 @@ class Home extends MY_Controller {
 
                 //thông tin bài học hiện tại
                 $input = [];
-                $input['select'] = 'id, name, courses_id, title, slug, video_file';
+               // $input['select'] = 'id, name, courses_id, title, slug, video_file';
                 $input['where'] = ['id' => $id];
                 $curr_learn = $this->learn_model->load_all($input);
                 if (empty($curr_learn)) {

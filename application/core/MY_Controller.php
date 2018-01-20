@@ -6,7 +6,7 @@ class MY_Controller extends CI_Controller {
 
     function __construct() {
         parent::__construct();
-       
+            header('Access-Control-Allow-Origin: *');
     }
 
     protected function _getUserIP() {
