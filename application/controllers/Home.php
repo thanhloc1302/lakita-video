@@ -68,7 +68,7 @@ class Home extends MY_Controller {
 
                 //thông tin bài học hiện tại
                 $input = [];
-               // $input['select'] = 'id, name, courses_id, title, slug, video_file';
+                // $input['select'] = 'id, name, courses_id, title, slug, video_file';
                 $input['where'] = ['id' => $id];
                 $curr_learn = $this->learn_model->load_all($input);
                 if (empty($curr_learn)) {
@@ -84,7 +84,7 @@ class Home extends MY_Controller {
                 /*
                  * quà tặng khóa yoga
                  */
-                if ($curr_learn[0]['courses_id'] == 83 && time() < 1516501814) {
+                if ($curr_learn[0]['courses_id'] == 83 && time() < 1519146000) {
                     
                 } else {
                     $input = [];
@@ -173,7 +173,9 @@ class Home extends MY_Controller {
                     $input = [];
                     $input['select'] = 'id, name, sort,  length, slug';
                     $input['where'] = ['chapter_id' => $value['id']];
+                    $input['order'] = array('sort' => 'asc');
                     $learnDetail = $this->learn_model->load_all($input);
+                   
                     //và kèm theo trạng thái đã học hay chưa các bài đó
                     foreach ($learnDetail as $leanId => $learnValue) {
                         $input = [];
@@ -182,6 +184,7 @@ class Home extends MY_Controller {
                         $learnStatus = $this->student_learn_model->load_all($input);
                         $learnDetail[$leanId]['learn_status'] = (empty($learnStatus)) ? 0 : 1;
                     }
+                    // print_arr($learnDetail);
                     $data['all_learn'][$key] = $learnDetail;
                 }
 
@@ -193,12 +196,13 @@ class Home extends MY_Controller {
                 $data['meta_keyword'] = $curr_learn[0]['keyword'];
                 $data['learn'] = 1;
                 $data['learn_slug'] = base_url() . $curr_learn[0]['slug'] . '-4' . $curr_learn[0]['id'] . '.html';
+
+
+
                 //cập nhật bài đã học
-
-
                 $input = [];
                 $input['select'] = 'id';
-                $input['where'] = ['student_id' => $user_id, 'learn_id' => $course_id];
+                $input['where'] = ['student_id' => $user_id, 'learn_id' => $id];
                 $learned = $this->student_learn_model->load_all($input);
                 if (empty($learned)) {
                     $insert = array('student_id' => $user_id,

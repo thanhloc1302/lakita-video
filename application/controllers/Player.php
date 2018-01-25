@@ -31,7 +31,8 @@ class Player extends MY_Controller {
             echo "http://171.244.19.161:1935/vod/mp4://" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . "/playlist.m3u8";
             die;
         } else {
-            echo "http://171.244.19.161:1935/vod/_definst_/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd';
+            //echo "http://171.244.19.161:1935/vod/_definst_/mp4:" . str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd';
+            echo base64_encode(str_replace('data/source/video_source/', '', $primary_video[0]['video_file']) . '/manifest.mpd');
             die;
         }
 //        else if ($Android) {

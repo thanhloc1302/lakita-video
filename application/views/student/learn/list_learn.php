@@ -8,7 +8,7 @@
             <?php
             foreach ($all_learn[$key] as $key2 => $lvalue) {
                 ?>
-                <li id = "scroll<?php echo $lvalue['sort']; ?>" class="list-group-item <?php
+                <li id="scroll<?php echo $lvalue['sort']; ?>" class="list-group-item <?php
                 if ($curr_id == $lvalue['id']) {
                     echo 'active';
                 }
@@ -25,7 +25,7 @@
                                 echo "<i class='fa fa-circle-o'></i>";
                             } else {
                                 switch ($lvalue['learn_status']) {
-                                    case 0:
+                                    case 1:
                                         echo "<i class='fa fa-check-circle lakita'></i>";
                                         break;
                                     default:
