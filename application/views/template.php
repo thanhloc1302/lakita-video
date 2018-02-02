@@ -3,6 +3,10 @@
     <?php $this->load->view('head') ?>
     <body style="overflow-x: hidden;">
         <div id="fb-root"></div>
+           <div class="fb-customerchat"
+             page_id="872893369492994" ref="<?php echo current_url(); ?>">
+        </div>
+
 <!--        <script>(function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id))
