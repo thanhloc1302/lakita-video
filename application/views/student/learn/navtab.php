@@ -1,5 +1,5 @@
 <!-- Nav tabs -->
-<ul class="nav nav-tabs" role="tablist">
+<ul class="nav nav-tabs" role="tablist" data-step="2" data-intro="Các tương tác bạn nên chú ý">
     <li role="presentation" class="active">
         <a href="#dsbaihoc" aria-controls="home" role="tab" data-toggle="tab">
             <i class="fa fa-list" aria-hidden="true"></i></br>

@@ -1,6 +1,7 @@
-<div role="tabpanel" class="tab-pane active" id="dsbaihoc">
+<div data-step="3" data-intro="Danh sách bài học bạn có thể lựa chọn từng bài học khác nhau." style="height: 100%;">
+<div role="tabpanel" class="tab-pane active" id="dsbaihoc" >
     <?php foreach ($chapter as $key => $value) { ?>
-        <p class="category"><?php echo $value['name']; ?></p>
+        <p class="category" ><?php echo $value['name']; ?></p>
         <?php if ($trial_learn == 1 && $value['id'] != 17) { ?>
             <a class="btn btn-success" href="<?php echo 'https://lakita.vn/' . $curr_course[0]['slug'] . '-3' . $curr_course[0]['id']; ?>.html"> Nâng cấp </a>
         <?php } ?>
@@ -44,4 +45,5 @@
             <?php } ?>
         </ul>
     <?php } ?>
+</div>
 </div>

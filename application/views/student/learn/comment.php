@@ -1,5 +1,5 @@
 <!--============================thảo luận ================================================-->
-<div class="row gr1-row-4">
+<div class="row gr1-row-4" data-step="4" data-intro="Bạn có thể để lại comment ở đây">
     <div class="row gr1-row4-1">
         <p><i class="fa fa-comments" aria-hidden="true"></i></i><b> Thảo luận</b></p>
     </div>
