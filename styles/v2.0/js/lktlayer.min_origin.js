@@ -22,7 +22,7 @@ $(function () {
             }
 
             var conf = {
-                key: "88c0a086-b956-4cf4-91ee-76dd78b58c3d",
+                key: "f1dda69f-52de-4d32-9ef4-dc76ed6a2105",
                 source: source,
                 playback: {
                     autoplay: true

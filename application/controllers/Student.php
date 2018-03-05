@@ -298,7 +298,7 @@ class Student extends MY_Controller {
         $this->session->unset_userdata('courses');
         $this->session->sess_destroy();
         session_destroy();
-        redirect(site_url());
+        redirect(_WEBSITE_.'student/logout');
     }
 
     //====================================================CÁC HÀM HỖ TRỢ =========================================================

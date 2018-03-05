@@ -6,7 +6,7 @@ hr{
 }
 
 body > div.row{
-    margin-top: -2px;
+        margin-top: -2px;
 }
 header{
     background-image: url('../dungtt/img/bootstrap/background-head.png');
@@ -271,15 +271,10 @@ ul.nextCourse2 li.active{
     background-color: #ccc;
     padding: 10px;
 }
-.panel .tab-content ul li{
-    padding: 0px;
-}
 .panel .tab-content ul li a{
     color: #020202;
     font-family: RobotoCondensed-Regular;
     font-size: 18px;
-    padding: 10px 15px;
-    display: block;
 }
 .panel .tab-content ul li.active a{
     color: #2c944a;
@@ -292,7 +287,7 @@ ul.nextCourse2 li.active{
 }
 
 .panel .input-group{
-    text-align: center;
+        text-align: center;
     margin: 15px auto 5px auto;
 }
 #list_cmt *{
@@ -306,8 +301,8 @@ ul.nextCourse2 li.active{
 }
 
 .avatar{
-    /* width:66px;
-     height: 66px;*/
+   /* width:66px;
+    height: 66px;*/
 }
 .love_link{
     cursor: pointer;
@@ -333,32 +328,15 @@ ul.nextCourse2 li.active{
     border-radius: 4px
 }
 div.tab-content p.category{
-    font-size: 18px;
-    font-weight: bold;
+        font-size: 18px;
+        font-weight: bold;
 }
 
 #noti .img{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
 
-.float_video{
-    position: fixed;
-    width: 500px;
-    z-index: 1000000000;
-    right: 0;
-    bottom: 70px;
-    -webkit-transition:all 3s ease;
-}
-.js-video-btn{
-    display: none
-}
-.event2011{
-    display: none;
-}
-#try_learn{
-    display: none;
-}
 
 

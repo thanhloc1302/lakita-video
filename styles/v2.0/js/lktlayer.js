@@ -1,5 +1,5 @@
 $(function () {
-
+    console.log(jwplayer.version);
     var hayFlash = function (a, b) {
         try {
             a = new ActiveXObject(a + b + '.' + a + b);
@@ -33,24 +33,25 @@ $(function () {
         success: function (response)
         {
             console.log(response);
-            console.log(hayFlash);
-            var rs = response.split(":");
-            console.log(rs[0]);
+        //    console.log(hayFlash);
+//            var rs = response.split(":");
+        //    console.log(rs[0]);
             if (response == '')
             {
                 alert('Video không tồn tại')
                 return;
             }
-
+            
+            
+            
             jwplayer('mediaspace').setup({
                 file: response,
                 autostart: 'false',
                 width: "100%",
                 aspectratio: "16:9",
                 stretching: 'fill',
-                abouttext: "Lakita.vn",
-                aboutlink: "https://lakita.vn",
-                primary: "flash",
+                dash: true,
+
                 image: "https://lakita.vn/styles/images/play.jpg",
                 events: {
                     onComplete: function () {

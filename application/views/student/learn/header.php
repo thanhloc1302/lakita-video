@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+        <div class="navbar-header" style="margin-top:15px">
             <a class="navbar-brand text-center" href="<?php echo base_url(); ?>"> <img
                     src="https://crm2.lakita.vn/style/img/logo5.png"
                     class="logo-navbar img-responsive"> </a>
@@ -13,7 +13,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form action="<?php echo base_url('tim-kiem.html'); ?>" method="GET" class="navbar-form navbar-left">
+            <form action="https://lakita.vn/tim-kiem.html" method="GET" class="navbar-form navbar-left" style="margin-top:18px">
                 <div class="input-group search">
                     <input type="text" class="form-control" name="key_word" placeholder="Tìm kiếm các khóa học bạn quan tâm..."
                     <?php echo isset($_GET['key_word']) ? 'value="' . $_GET['key_word'] . '"' : '' ?>
@@ -112,7 +112,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;
                 </li>
                 <li>
-                    <a href="<?php echo base_url(); ?>kich-hoat-khoa-hoc.html">
+                    <a href="https://lakita.vn/kich-hoat-khoa-hoc.html">
                         <button type="button" class="btn btn-default navbar-btn active-khoa-hoc">
                             <i class="fa fa-unlock-alt" aria-hidden="true"></i> <b>&nbsp; Kích hoạt khóa học </b>
                         </button>
@@ -123,7 +123,7 @@
                     if (!isset($user_id)) {
                         ?>
 
-                        <a href="<?php echo base_url('dang-nhap.html'); ?>">
+                    <a href="<?php echo base_url('dang-nhap.html'); ?>">
                             <button type="button" class="btn navbar-btn button-login button-right" data-step="1" data-intro="<b>Đăng nhập / Đăng ký</b>">
                                 <i aria-hidden="true"></i>Đăng nhâp / Đăng ký 
                             </button>

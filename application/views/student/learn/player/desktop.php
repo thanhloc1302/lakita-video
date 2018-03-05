@@ -21,4 +21,4 @@
         </div>
     </div>
 </div>
-<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>
+<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min_origin.js?ver=<?php echo _VER_CACHED_ ?>"></script>

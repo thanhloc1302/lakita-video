@@ -4,7 +4,7 @@
         <p><i class="fa fa-comments" aria-hidden="true"></i></i><b> Thảo luận</b></p>
     </div>
     <div class="row gr1-row4-2">
-        <div class="col-md-2">
+        <div class="col-md-2 hidden-sm hidden-xs">
             <img src="<?php
             if (!empty($student[0]['thumbnail'])) {
                 echo 'https://lakita.vn/' . $student[0]['thumbnail'];
@@ -17,7 +17,7 @@
             }
             ?>" alt="" class="img-circle img-responsive avatar" />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 col-sm-12 col-xs-12">
             <div class="form-group">
                 <label for="">Tiêu đề</label>
                 <input type="text" class="form-control" id="content_cmt" style="padding: 23px 12px;" placeholder="Nhập nội dung tiêu đề cần thảo luận">
