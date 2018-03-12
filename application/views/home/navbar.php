@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand text-center" href="<?php echo base_url(); ?>"> <img
+            <a class="navbar-brand text-center" href="<?php echo 'https://lakita.vn'; ?>"> <img
                     src="https://crm2.lakita.vn/style/img/logo5.png"
                     class="logo-navbar img-responsive"> </a>
 
@@ -181,7 +181,7 @@
     <?php
     if (!isset($user_id)) {
         ?>
-        <form action="<?php echo base_url('tim-kiem.html'); ?>" method="GET" class="navbar-form navbar-left">
+        <form action="<?php echo _WEBSITE_.'tim-kiem.html'; ?>" method="GET" class="navbar-form navbar-left">
             <div class="input-group search">
                 <input type="text" class="form-control" name="key_word" placeholder="Tìm kiếm các khóa học bạn quan tâm..."
                 <?php echo isset($_GET['key_word']) ? 'value="' . $_GET['key_word'] . '"' : '' ?>
@@ -192,15 +192,15 @@
             </div>
         </form>
         <hr>
-        <a href="<?php echo base_url('dang-nhap.html'); ?>">
+        <a href="<?php echo _WEBSITE_.'dang-nhap.html'; ?>">
             <i class="fa fa-sign-in fa-fw" aria-hidden="true"></i>  &nbsp;&nbsp; Đăng nhâp
         </a>
         <hr>
-        <a href="<?php echo base_url('dang-nhap.html'); ?>">
+        <a href="<?php echo _WEBSITE_.'dang-nhap.html'; ?>">
             <i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>  &nbsp;&nbsp; Đăng ký
         </a>
         <hr>
-        <a href="<?php echo base_url(); ?>kich-hoat-khoa-hoc.html">
+        <a href="<?php echo _WEBSITE_; ?>kich-hoat-khoa-hoc.html">
             <i class="fa fa-compress fa-fw" aria-hidden="true"></i>
             &nbsp;&nbsp; Kích hoạt khóa học
         </a>
@@ -212,7 +212,7 @@
                  src="<?php echo getUserPictureSrc($student); ?>"
                  alt="">
             <p class="name-mobie"> <?php echo $student[0]['name']; ?> </p>
-            <form action="<?php echo base_url('tim-kiem.html'); ?>" method="GET" class="navbar-form navbar-left">
+            <form action="<?php echo _WEBSITE_.'tim-kiem.html'; ?>" method="GET" class="navbar-form navbar-left">
                 <div class="input-group search">
                     <input type="text" class="form-control" name="key_word" placeholder="Tìm kiếm các khóa học bạn quan tâm..."
                     <?php echo isset($_GET['key_word']) ? 'value="' . $_GET['key_word'] . '"' : '' ?>
@@ -224,22 +224,22 @@
             </form>
         </div>
 
-        <a href="<?php echo base_url(); ?>khoa-hoc-cua-toi.html">
+        <a href="<?php echo _WEBSITE_; ?>khoa-hoc-cua-toi.html">
             <i class="fa fa-pencil-square-o fa-fw" aria-hidden="true"></i> &nbsp;&nbsp;
             Khóa học của tôi
         </a>
         <hr>
-        <a href="<?php echo base_url(); ?>kich-hoat-khoa-hoc.html">
+        <a href="<?php echo _WEBSITE_; ?>kich-hoat-khoa-hoc.html">
             <i class="fa fa-compress fa-fw" aria-hidden="true"></i>
             &nbsp;&nbsp; Kích hoạt khóa học
         </a>
         <hr>
-        <a href="<?php echo base_url(); ?>nap-tien-vao-tai-khoan.html">
+        <a href="<?php echo _WEBSITE_; ?>nap-tien-vao-tai-khoan.html">
             <i class="fa fa-usd fa-fw" aria-hidden="true"></i>
             &nbsp;&nbsp; Nạp tiền vào tài khoản
         </a>
         <hr>
-        <a href="<?php echo base_url(); ?>thong-tin-tai-khoan.html">
+        <a href="<?php echo _WEBSITE_; ?>thong-tin-tai-khoan.html">
             <i class="fa fa-user fa-fw" aria-hidden="true"></i>
             &nbsp;&nbsp;Tài khoản
         </a>
@@ -252,18 +252,27 @@
 </div><!--Kết thúc menu trên mobie-->
 
 
-<div class="container-fluid" style="margin-top: 18px"> <!--Body Content-->
-    <!-- Set up your HTML -->
+<!--<div class="container-fluid" style="margin-top: 18px"> Body Content
+     Set up your HTML 
     <div>
         <div class="owl-carousel owl-theme slider">
             <div class="img-slider">
-                <a href="https://lakita.vn/combo-qua-khung-dip-giang-sinh.html" target="_blank">
                     <picture>
-                        <source srcset="styles/v2.0/img/banner/banner-tet-ipad.png" media="(max-width: 700px)">
-                        <source srcset="styles/v2.0/img/banner/banner-tet-mobile.png" media="(max-width: 450px)">
-                        <img srcset="styles/v2.0/img/banner/banner-tet.png">
+                        <source srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/banner_83_mobi.png" media="(max-width: 700px)">
+                        <source srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/banner_83_mobi.png" media="(max-width: 450px)">
+                        <img srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/banner_83.png">
                     </picture>
-<!--                    <img class="img-rounded" src="styles/v2.0/img/banner/banner-tet.png"/>-->
+                    <img class="img-rounded" src="styles/v2.0/img/banner/banner_group_fb.png"/>
+                
+            </div>
+            <div class="img-slider">
+                <a href="https://www.facebook.com/groups/congdonghocvienlakita/" target="_blank">
+                    <picture>
+                        <source srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/popup_group_fb.png" media="(max-width: 700px)">
+                        <source srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/popup_group_fb.png" media="(max-width: 450px)">
+                        <img srcset="<?php echo _WEBSITE_; ?>styles/v2.0/img/banner/banner_group_fb.png">
+                    </picture>
+                    <img class="img-rounded" src="styles/v2.0/img/banner/banner_group_fb.png"/>
                 </a>
             </div>
             <div class="img-slider">
@@ -273,12 +282,12 @@
                         <source srcset="styles/v2.0/img/banner/dich-vu-excel-mobile.png" media="(max-width: 450px)">
                         <img srcset="styles/v2.0/img/banner/dich-vu-excel.png">
                     </picture>
-<!--                    <img class="img-rounded" src="styles/v2.0/img/banner/dich-vu-excel.png"/>-->
+                    <img class="img-rounded" src="styles/v2.0/img/banner/dich-vu-excel.png"/>
                 </a>
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <script src="<?php echo base_url(); ?>styles/v2.0/js/navbar.js?ver=<?php echo _VER_CACHED_ ?>"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>styles/v2.0/js/notification.js?ver=<?php echo _VER_CACHED_ ?>"></script>
 <link type="text/css" rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/v2.0/css/introjs.css"/>

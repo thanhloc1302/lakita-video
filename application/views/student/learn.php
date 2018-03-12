@@ -8,7 +8,7 @@
 <style>
     .videolayout{
         width: 97%;
-        float: right
+        float: right;
     }
     .float_video{
         position: fixed;
@@ -34,7 +34,7 @@
     <?php $this->load->view('mobile/navbar'); ?>
 <?php } ?>
 
-<div class="row" <?php if ($this->agent->is_mobile()) echo 'style="margin-top: -20px;"'; ?>>
+<div class="row" <?php if ($this->agent->is_mobile()){ echo 'style="margin-top: 70px;"';}else{ echo 'style="margin-top: 100px;"'; } ?>>
     <div class="col-md-8 col-xs-12 col-sm-12" style="font-size: 16px">
         <div class="row gr1-row-1">
             <div class="st-pusher" id="content">
@@ -279,7 +279,7 @@
                                             $filename = end($filename);
                                             ?>
                                             <li class="list-group-item">
-                                                <a href="<?php echo base_url() . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
+                                                <a href="<?php echo _WEBSITE_ . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
                                                     <i class="fa fa-file-text"></i>&nbsp;&nbsp;
                                                     <?php
                                                     if (!empty($attach_desc[$fkey]))
@@ -494,7 +494,7 @@
                                             $filename = end($filename);
                                             ?>
                                             <li class="list-group-item">
-                                                <a href="<?php echo base_url() . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
+                                                <a href="<?php echo _WEBSITE_ . 'tai-ve.html/' . str_replace("=", "", base64_encode($file)); ?>">
                                                     <i class="fa fa-file-text"></i>&nbsp;&nbsp;
                                                     <?php
                                                     if (!empty($attach_desc[$fkey]))

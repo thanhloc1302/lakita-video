@@ -74,6 +74,12 @@ class Home extends MY_Controller {
                 /*
                  * quà tặng khóa yoga
                  */
+                $this->load->model('student_model');
+                $input =[];
+                $input['select'] = 'createdate';
+                $input['where'] = array('id' => $user_id);
+                $student = $this->student_model->load_all($input);
+                
                 if ($curr_learn[0]['courses_id'] == 83 && time() < $student[0]['createdate'] + 5259487) {
                   
                 } else {

@@ -46,7 +46,7 @@ $(function () {
             
             jwplayer('mediaspace').setup({
                 file: response,
-                autostart: 'false',
+                autostart: 'true',
                 width: "100%",
                 aspectratio: "16:9",
                 stretching: 'fill',
