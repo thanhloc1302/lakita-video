@@ -1,4 +1,10 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>styles/v2.0/css/style.bootstrap12.lakita.css?ver=<?php echo _VER_CACHED_ ?>" />
+<style>
+    .videolayout{
+        width: 97%;
+        float: right;
+    }
+</style>
 <?php if (!$this->agent->is_mobile()) { ?>
     <header>
         <div class="row header-row-1">
@@ -40,23 +46,43 @@
             <div class="st-pusher" id="content">
                 <div class="st-content">
                     <div class="st-content-inner padding-none">
-                        <div class="container-fluid">
-                            <div class="js-video widescreen">
+                        <div class="container-fluid videolayout">
+                            <div class="js-video widescreen" data-step="1" data-intro="Các bạn có thể tang giảm âm lượng, bật full màn hình hoặc dừng, tua nhanh video ở phần đóng khung dưới đây.">
                                 <?php
-                                
-                                $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
-                                $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
-                                $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
-                                $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
-                                if ($iPod || $iPhone || $iPad) {
-                                    $this->load->view('student/learn/player/iphone');
-                                } else if ($Android) {
-                                    $this->load->view('student/learn/player/android');
+                            
+                                if (!empty($curr_learn[0]['video_file'])) {
+                                    $value = $curr_learn[0]['id'];
+                                    $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
+                                    $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
+                                    $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
+                                    $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
+                                    if ($iPod || $iPhone || $iPad) {
+                                        ?>
+                                        <video src="https://lakita.vn/<?php echo $curr_learn[0]['video_file']; ?>"  width="100%" controls>
+                                            Your browser does not support the element.   
+                                        </video>
+                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" />
+
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
+                                        <?php
+                                    }
                                 } else {
-                                    $this->load->view('student/learn/player/desktop');
-                                }
-                                ?>
+                                    ?>
+                                    <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . 612 . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
+                                <?php } ?>
+                                <script src="http://jwpsrv.com/library/cv_TvsH0EeO4_CIACmOLpg.js"></script>
+                                <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.js?VER=20.01.2018"></script>
+                                <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.html5.js?VER=20.01.2018"></script>
+                                <script type="text/javascript">jwplayer.key = "N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==";</script>
+                                 <!--  <script type="text/javascript" src="https://content.jwplatform.com/libraries/kTgFQviI.js"></script> -->
+                                <input type="hidden" id="auto_next" value="1" />
+                                <input type="hidden" id="curr_learn_id" value="<?php echo $curr_id; ?>" />
+                                <?php $this->session->set_tempdata('is_playable', $curr_id, 3600); ?>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -287,7 +313,7 @@
 <?php //$this->load->view('course/detail/vote_modal');   ?>
 </div>
 <script src="<?php echo base_url(); ?>styles/v2.0/js/learn.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<!--<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.min.js?ver=<?php echo _VER_CACHED_ ?>"></script>-->
+<script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.js?ver=<?php echo _VER_CACHED_ ?>"></script>
 <!--<script src="<?php echo base_url(); ?>styles/v2.0/js/scrt.js"></script>  -->
 <?php
 //if ($trial_learn == 1 && $curr_id == 269) {

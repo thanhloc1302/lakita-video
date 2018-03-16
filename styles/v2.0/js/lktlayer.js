@@ -33,17 +33,17 @@ $(function () {
         success: function (response)
         {
             console.log(response);
-        //    console.log(hayFlash);
+            //    console.log(hayFlash);
 //            var rs = response.split(":");
-        //    console.log(rs[0]);
+            //    console.log(rs[0]);
             if (response == '')
             {
                 alert('Video không tồn tại')
                 return;
             }
-            
-            
-            
+
+
+
             jwplayer('mediaspace').setup({
                 file: response,
                 autostart: 'true',
@@ -51,8 +51,12 @@ $(function () {
                 aspectratio: "16:9",
                 stretching: 'fill',
                 dash: true,
-
                 image: "https://lakita.vn/styles/images/play.jpg",
+                skin: {
+                    name: "bekle",
+                    active: "white",
+                    inactive: "white",
+                },
                 events: {
                     onComplete: function () {
                         //xác định xem trang học hay trang chi tiết khóa học để auto next
