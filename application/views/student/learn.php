@@ -41,43 +41,48 @@
                 <div class="st-content">
                     <div class="st-content-inner padding-none">
                         <div class="container-fluid videolayout">
+                            <?php if ($student[0]['is_exception']) { ?>
+                                <video id="vid-html5" width="100%" height="100%" controls autoplay controlsList="nodownload">
+                                    <source src="<?php echo 'https://lakita.vn/' . $curr_learn[0]['video_file']; ?>" type="video/mp4">
+                                </video>
+                            <?php } else { ?>
+                                <div class="js-video widescreen" data-step="1" data-intro="Các bạn có thể tang giảm âm lượng, bật full màn hình hoặc dừng, tua nhanh video ở phần đóng khung dưới đây.">
+                                    <button class="js-video-btn btn btn-success">Đóng</button>
+                                    <?php
+                                
+                                    if (!empty($curr_learn[0]['video_file'])) {
+                                        $value = $curr_learn[0]['id'];
+                                        $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
+                                        $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
+                                        $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
+                                        $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
+                                        if ($iPod || $iPhone || $iPad) {
+                                            ?>
+                                            <video src="https://lakita.vn/<?php echo $curr_learn[0]['video_file']; ?>"  width="100%" controls>
+                                                Your browser does not support the element.   
+                                            </video>
+                                            <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" />
 
-                            <div class="js-video widescreen" data-step="1" data-intro="Các bạn có thể tang giảm âm lượng, bật full màn hình hoặc dừng, tua nhanh video ở phần đóng khung dưới đây.">
-                                <button class="js-video-btn btn btn-success">Đóng</button>
-                                <?php
-                            
-                                if (!empty($curr_learn[0]['video_file'])) {
-                                    $value = $curr_learn[0]['id'];
-                                    $iPod = stripos($_SERVER['HTTP_USER_AGENT'], "iPod");
-                                    $iPhone = stripos($_SERVER['HTTP_USER_AGENT'], "iPhone");
-                                    $iPad = stripos($_SERVER['HTTP_USER_AGENT'], "iPad");
-                                    $Android = stripos($_SERVER['HTTP_USER_AGENT'], "Android");
-                                    if ($iPod || $iPhone || $iPad) {
-                                        ?>
-                                        <video src="https://lakita.vn/<?php echo $curr_learn[0]['video_file']; ?>"  width="100%" controls>
-                                            Your browser does not support the element.   
-                                        </video>
-                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" />
-
-                                        <?php
+                                            <?php
+                                        } else {
+                                            ?>
+                                            <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
+                                            <?php
+                                        }
                                     } else {
                                         ?>
-                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . $value . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
-                                        <?php
-                                    }
-                                } else {
-                                    ?>
-                                    <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . 612 . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
-                                <?php } ?>
-                                <script src="http://jwpsrv.com/library/cv_TvsH0EeO4_CIACmOLpg.js"></script>
-                                <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.js?VER=20.01.2018"></script>
-                                <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.html5.js?VER=20.01.2018"></script>
-                                <script type="text/javascript">jwplayer.key = "N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==";</script>
-                                 <!--  <script type="text/javascript" src="https://content.jwplatform.com/libraries/kTgFQviI.js"></script> -->
-                                <input type="hidden" id="auto_next" value="1" />
-                                <input type="hidden" id="curr_learn_id" value="<?php echo $curr_id; ?>" />
-                                <?php $this->session->set_tempdata('is_playable', $curr_id, 3600); ?>
-                            </div>
+                                        <input type="hidden" id="lakitaid" value="<?php echo md5(time()) . '$&((_GNSDADFHGD@!$^&%#' . time() . ')*&^%$@' . time() . '#' . 612 . '#' . time() . '_+1357$*^())!%*$$&' . md5('lakita.vn') . '+135+1357$*^())!%*$$7$*^())!%*$$+1+1357$*^())!%*$$357$*^())!%*$$'; ?>" /><div id="mediaspace"></div>
+                                    <?php } ?>
+                                    <script src="http://jwpsrv.com/library/cv_TvsH0EeO4_CIACmOLpg.js"></script>
+                                    <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.js?VER=20.01.2018"></script>
+                                    <script type="text/javascript" src="<?php echo 'https://lakita.vn/'; ?>plugin/jwplayer/jwplayer.html5.js?VER=20.01.2018"></script>
+                                    <script type="text/javascript">jwplayer.key = "N8zhkmYvvRwOhz4aTGkySoEri4x+9pQwR7GHIQ==";</script>
+                                     <!--  <script type="text/javascript" src="https://content.jwplatform.com/libraries/kTgFQviI.js"></script> -->
+                                    <input type="hidden" id="auto_next" value="1" />
+                                    <input type="hidden" id="curr_learn_id" value="<?php echo $curr_id; ?>" />
+                                    <?php $this->session->set_tempdata('is_playable', $curr_id, 3600); ?>
+                                </div>
+                            <?php } ?>
                             <div style="color :red; text-align: center; font-weight: bold">
                                 <p>Nếu bạn gặp sự cố, vui lòng cài đặt <a href="https://www.youtube.com/watch?v=HjZU99M7398" target="blank">Teamview</a> và liên hệ tới số điện thoại 1900 6361 95 để được hỗ trợ</p>
                             </div>
@@ -553,7 +558,14 @@
 
 <script src="<?php echo base_url(); ?>styles/v2.0/js/learn.js?ver=<?php echo _VER_CACHED_ ?>"></script>
 <script src="<?php echo base_url(); ?>styles/v2.0/js/lktlayer.js?ver=<?php echo _VER_CACHED_ ?>"></script>
-<!--<script src="<?php echo base_url(); ?>styles/v2.0/js/scrt.js"></script>  -->
+<!--<script src="<?php //echo base_url(); ?>styles/v2.0/js/scrt.js"></script>  -->
+
+    <!-- script to unable right-click "save" html5 video - HuyNV -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $('#vid-html5').bind('contextmenu',function() { return false; });
+        });
+    </script>
 <?php $this->load->view('student/action_comment'); ?>
 <?php
 if ($trial_learn == 1) {
